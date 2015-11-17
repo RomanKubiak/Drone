@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="Jj1tSB" name="Drone" projectType="guiapp" version="1.0.0"
+              bundleIdentifier="com.yourcompany.Drone" includeBinaryInAppConfig="1"
+              jucerVersion="3.2.0">
+  <MAINGROUP id="VusQAT" name="Drone">
+    <GROUP id="{DC9DB53F-A8D8-487A-C435-172CC5CDF46E}" name="Source">
+      <FILE id="AcPe9M" name="dRowAudio_AudioOscilloscope.cpp" compile="1"
+            resource="0" file="Source/dRowAudio_AudioOscilloscope.cpp"/>
+      <FILE id="Krlagz" name="dRowAudio_AudioOscilloscope.h" compile="0"
+            resource="0" file="Source/dRowAudio_AudioOscilloscope.h"/>
+      <FILE id="SWLX8W" name="DroneScope.cpp" compile="1" resource="0" file="Source/DroneScope.cpp"/>
+      <FILE id="BDPrs6" name="DroneScope.h" compile="0" resource="0" file="Source/DroneScope.h"/>
+      <FILE id="rMPvzr" name="Drone.h" compile="0" resource="0" file="Source/Drone.h"/>
+      <FILE id="Fn40nW" name="DroneEngine.cpp" compile="1" resource="0" file="Source/DroneEngine.cpp"/>
+      <FILE id="nVVeTd" name="DroneEngine.h" compile="0" resource="0" file="Source/DroneEngine.h"/>
+      <FILE id="ujz9CD" name="DroneUI.cpp" compile="1" resource="0" file="Source/DroneUI.cpp"/>
+      <FILE id="dvo4Gf" name="DroneUI.h" compile="0" resource="0" file="Source/DroneUI.h"/>
+      <FILE id="u3Pixj" name="Drone.cpp" compile="1" resource="0" file="Source/Drone.cpp"/>
+      <FILE id="zWPHhQ" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <VS2010 targetFolder="Builds/VisualStudio2010">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="1" optimisation="1" targetName="Drone"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="0" optimisation="3" targetName="Drone"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../JUCE/modules"/>
+        <MODULEPATH id="stk_core" path="../JUCE/modules"/>
+        <MODULEPATH id="stk_generators" path="../JUCE/modules"/>
+        <MODULEPATH id="stk_generators_extra" path="../JUCE/modules"/>
+        <MODULEPATH id="stk_filters" path="../JUCE/modules"/>
+        <MODULEPATH id="stk_effects" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2010>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" libraryPath="/usr/X11R6/lib/" isDebug="1" optimisation="1"
+                       targetName="Drone"/>
+        <CONFIGURATION name="Release" libraryPath="/usr/X11R6/lib/" isDebug="0" optimisation="3"
+                       targetName="Drone"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../JUCE/modules"/>
+        <MODULEPATH id="stk_core" path="../JUCE/modules"/>
+        <MODULEPATH id="stk_generators" path="../JUCE/modules"/>
+        <MODULEPATH id="stk_generators_extra" path="../JUCE/modules"/>
+        <MODULEPATH id="stk_filters" path="../JUCE/modules"/>
+        <MODULEPATH id="stk_effects" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../JUCE/modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+    <CODEBLOCKS_LINUX targetFolder="Builds/CodeBlocksLinux">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="Drone"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="Drone"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../JUCE/modules"/>
+        <MODULEPATH id="stk_core" path="../JUCE/modules"/>
+        <MODULEPATH id="stk_generators" path="../JUCE/modules"/>
+        <MODULEPATH id="stk_generators_extra" path="../JUCE/modules"/>
+        <MODULEPATH id="stk_filters" path="../JUCE/modules"/>
+        <MODULEPATH id="stk_effects" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../JUCE/modules"/>
+      </MODULEPATHS>
+    </CODEBLOCKS_LINUX>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="stk_core" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="stk_effects" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="stk_filters" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="stk_generators" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="stk_generators_extra" showAllCode="1" useLocalCopy="1"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>

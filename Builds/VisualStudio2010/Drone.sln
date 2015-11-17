@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FBE7A7EB-9E1B-46DC-1B98-A7A235FFE7CD}") = "Drone", "Drone.vcxproj", "{AD64CFA8-DABE-C769-8D7A-068AA55D0206}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD64CFA8-DABE-C769-8D7A-068AA55D0206}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AD64CFA8-DABE-C769-8D7A-068AA55D0206}.Debug|Win32.Build.0 = Debug|Win32
+		{AD64CFA8-DABE-C769-8D7A-068AA55D0206}.Release|Win32.ActiveCfg = Release|Win32
+		{AD64CFA8-DABE-C769-8D7A-068AA55D0206}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
