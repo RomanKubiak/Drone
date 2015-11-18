@@ -148,7 +148,7 @@ void FileWvIn :: setRate( StkFloat rate )
   // of sound.
   if ( (rate_ < 0) && (time_ == 0.0) ) time_ = file_.fileSize() - 1.0;
 
-  if ( fmod( rate_, 1.0 ) != 0.0 ) interpolate_ = true;
+  if ( fmod( rate_, 1.0f ) != 0.0 ) interpolate_ = true;
   else interpolate_ = false;
 }
 

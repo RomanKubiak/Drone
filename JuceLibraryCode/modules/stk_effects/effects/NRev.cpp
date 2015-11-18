@@ -42,7 +42,7 @@ NRev :: NRev( StkFloat T60 )
   for ( i=0; i<6; i++ ) {
     combDelays_[i].setMaximumDelay( lengths[i] );
     combDelays_[i].setDelay( lengths[i] );
-    combCoefficient_[i] = pow(10.0, (-3 * lengths[i] / (T60 * Stk::sampleRate())));
+    combCoefficient_[i] = pow(10.0f, (-3 * lengths[i] / (T60 * Stk::sampleRate())));
   }
 
   for ( i=0; i<8; i++ ) {
