@@ -7,7 +7,7 @@
   the "//[xyz]" and "//[/xyz]" sections will be retained when the file is loaded
   and re-saved.
 
-  Created with Introjucer version: 3.2.0
+  Created with Introjucer version: 4.0.1
 
   ------------------------------------------------------------------------------
 
@@ -92,12 +92,6 @@ DroneUI::DroneUI (Drone &_drone,  MidiKeyboardState &_keyboardState)
     offset8->setTextBoxStyle (Slider::TextBoxBelow, false, 56, 16);
     offset8->addListener (this);
 
-    addAndMakeVisible (offset9 = new Slider ("9"));
-    offset9->setRange (-50, 50, 0.05);
-    offset9->setSliderStyle (Slider::LinearVertical);
-    offset9->setTextBoxStyle (Slider::TextBoxBelow, false, 56, 16);
-    offset9->addListener (this);
-
     addAndMakeVisible (shape2 = new ToggleButton ("2"));
     shape2->setButtonText (TRANS("Saw"));
     shape2->addListener (this);
@@ -126,12 +120,152 @@ DroneUI::DroneUI (Drone &_drone,  MidiKeyboardState &_keyboardState)
     shape8->setButtonText (TRANS("Saw"));
     shape8->addListener (this);
 
-    addAndMakeVisible (shape9 = new ToggleButton ("new toggle button"));
-    shape9->setButtonText (TRANS("Saw"));
-    shape9->addListener (this);
+    addAndMakeVisible (rSize = new Slider ("rSize"));
+    rSize->setRange (0, 255, 1);
+    rSize->setSliderStyle (Slider::RotaryVerticalDrag);
+    rSize->setTextBoxStyle (Slider::TextBoxBelow, false, 32, 16);
+    rSize->addListener (this);
+
+    addAndMakeVisible (rDamp = new Slider ("rDamp"));
+    rDamp->setRange (0, 255, 1);
+    rDamp->setSliderStyle (Slider::RotaryVerticalDrag);
+    rDamp->setTextBoxStyle (Slider::TextBoxBelow, false, 32, 16);
+    rDamp->addListener (this);
+
+    addAndMakeVisible (rWet = new Slider ("rWet"));
+    rWet->setRange (0, 255, 1);
+    rWet->setSliderStyle (Slider::RotaryVerticalDrag);
+    rWet->setTextBoxStyle (Slider::TextBoxBelow, false, 32, 16);
+    rWet->addListener (this);
+
+    addAndMakeVisible (rDry = new Slider ("rDry"));
+    rDry->setRange (0, 255, 1);
+    rDry->setSliderStyle (Slider::RotaryVerticalDrag);
+    rDry->setTextBoxStyle (Slider::TextBoxBelow, false, 32, 16);
+    rDry->addListener (this);
+
+    addAndMakeVisible (rWidth = new Slider ("rWidth"));
+    rWidth->setRange (0, 255, 1);
+    rWidth->setSliderStyle (Slider::RotaryVerticalDrag);
+    rWidth->setTextBoxStyle (Slider::TextBoxBelow, false, 32, 16);
+    rWidth->addListener (this);
+
+    addAndMakeVisible (rFreeze = new ToggleButton ("rFreeze"));
+    rFreeze->setButtonText (String::empty);
+    rFreeze->addListener (this);
+
+    addAndMakeVisible (label = new Label ("new label",
+                                          TRANS("Size")));
+    label->setFont (Font (14.00f, Font::plain));
+    label->setJustificationType (Justification::centredLeft);
+    label->setEditable (false, false, false);
+    label->setColour (TextEditor::textColourId, Colours::black);
+    label->setColour (TextEditor::backgroundColourId, Colour (0x00000000));
+
+    addAndMakeVisible (label2 = new Label ("new label",
+                                           TRANS("Damp")));
+    label2->setFont (Font (14.00f, Font::plain));
+    label2->setJustificationType (Justification::centredLeft);
+    label2->setEditable (false, false, false);
+    label2->setColour (TextEditor::textColourId, Colours::black);
+    label2->setColour (TextEditor::backgroundColourId, Colour (0x00000000));
+
+    addAndMakeVisible (label3 = new Label ("new label",
+                                           TRANS("Wet")));
+    label3->setFont (Font (14.00f, Font::plain));
+    label3->setJustificationType (Justification::centredLeft);
+    label3->setEditable (false, false, false);
+    label3->setColour (TextEditor::textColourId, Colours::black);
+    label3->setColour (TextEditor::backgroundColourId, Colour (0x00000000));
+
+    addAndMakeVisible (label4 = new Label ("new label",
+                                           TRANS("Dry")));
+    label4->setFont (Font (14.00f, Font::plain));
+    label4->setJustificationType (Justification::centredLeft);
+    label4->setEditable (false, false, false);
+    label4->setColour (TextEditor::textColourId, Colours::black);
+    label4->setColour (TextEditor::backgroundColourId, Colour (0x00000000));
+
+    addAndMakeVisible (label5 = new Label ("new label",
+                                           TRANS("Width")));
+    label5->setFont (Font (14.00f, Font::plain));
+    label5->setJustificationType (Justification::centredLeft);
+    label5->setEditable (false, false, false);
+    label5->setColour (TextEditor::textColourId, Colours::black);
+    label5->setColour (TextEditor::backgroundColourId, Colour (0x00000000));
+
+    addAndMakeVisible (label6 = new Label ("new label",
+                                           TRANS("Freeze")));
+    label6->setFont (Font (14.00f, Font::plain));
+    label6->setJustificationType (Justification::centredLeft);
+    label6->setEditable (false, false, false);
+    label6->setColour (TextEditor::textColourId, Colours::black);
+    label6->setColour (TextEditor::backgroundColourId, Colour (0x00000000));
+
+    addAndMakeVisible (dLength = new Slider ("dLength"));
+    dLength->setRange (0, 10, 0.05);
+    dLength->setSliderStyle (Slider::RotaryVerticalDrag);
+    dLength->setTextBoxStyle (Slider::TextBoxBelow, false, 32, 16);
+    dLength->addListener (this);
+
+    addAndMakeVisible (dFbk = new Slider ("dFbk"));
+    dFbk->setRange (0, 255, 1);
+    dFbk->setSliderStyle (Slider::RotaryVerticalDrag);
+    dFbk->setTextBoxStyle (Slider::TextBoxBelow, false, 32, 16);
+    dFbk->addListener (this);
+
+    addAndMakeVisible (dWet = new Slider ("dWet"));
+    dWet->setRange (0, 255, 1);
+    dWet->setSliderStyle (Slider::RotaryVerticalDrag);
+    dWet->setTextBoxStyle (Slider::TextBoxBelow, false, 32, 16);
+    dWet->addListener (this);
+
+    addAndMakeVisible (dDry = new Slider ("dDry"));
+    dDry->setRange (0, 255, 1);
+    dDry->setSliderStyle (Slider::RotaryVerticalDrag);
+    dDry->setTextBoxStyle (Slider::TextBoxBelow, false, 32, 16);
+    dDry->addListener (this);
+
+    addAndMakeVisible (label7 = new Label ("new label",
+                                           TRANS("Length")));
+    label7->setFont (Font (14.00f, Font::plain));
+    label7->setJustificationType (Justification::centredLeft);
+    label7->setEditable (false, false, false);
+    label7->setColour (TextEditor::textColourId, Colours::black);
+    label7->setColour (TextEditor::backgroundColourId, Colour (0x00000000));
+
+    addAndMakeVisible (d = new Label ("new label",
+                                      TRANS("Wet")));
+    d->setFont (Font (14.00f, Font::plain));
+    d->setJustificationType (Justification::centredLeft);
+    d->setEditable (false, false, false);
+    d->setColour (TextEditor::textColourId, Colours::black);
+    d->setColour (TextEditor::backgroundColourId, Colour (0x00000000));
+
+    addAndMakeVisible (label9 = new Label ("new label",
+                                           TRANS("Dry")));
+    label9->setFont (Font (14.00f, Font::plain));
+    label9->setJustificationType (Justification::centredLeft);
+    label9->setEditable (false, false, false);
+    label9->setColour (TextEditor::textColourId, Colours::black);
+    label9->setColour (TextEditor::backgroundColourId, Colour (0x00000000));
+
+    addAndMakeVisible (label10 = new Label ("new label",
+                                            TRANS("Feedback")));
+    label10->setFont (Font (14.00f, Font::plain));
+    label10->setJustificationType (Justification::centredLeft);
+    label10->setEditable (false, false, false);
+    label10->setColour (TextEditor::textColourId, Colours::black);
+    label10->setColour (TextEditor::backgroundColourId, Colour (0x00000000));
+
+    addAndMakeVisible (dReset = new TextButton ("dReset"));
+    dReset->setButtonText (TRANS("RST"));
+    dReset->addListener (this);
 
 
     //[UserPreSize]
+    rWet->setValue(0,sendNotification);
+    rDry->setValue(255,sendNotification);
     //[/UserPreSize]
 
     setSize (600, 600);
@@ -157,7 +291,6 @@ DroneUI::~DroneUI()
     offset6 = nullptr;
     offset7 = nullptr;
     offset8 = nullptr;
-    offset9 = nullptr;
     shape2 = nullptr;
     shape3 = nullptr;
     shape4 = nullptr;
@@ -165,7 +298,27 @@ DroneUI::~DroneUI()
     shape6 = nullptr;
     shape7 = nullptr;
     shape8 = nullptr;
-    shape9 = nullptr;
+    rSize = nullptr;
+    rDamp = nullptr;
+    rWet = nullptr;
+    rDry = nullptr;
+    rWidth = nullptr;
+    rFreeze = nullptr;
+    label = nullptr;
+    label2 = nullptr;
+    label3 = nullptr;
+    label4 = nullptr;
+    label5 = nullptr;
+    label6 = nullptr;
+    dLength = nullptr;
+    dFbk = nullptr;
+    dWet = nullptr;
+    dDry = nullptr;
+    label7 = nullptr;
+    d = nullptr;
+    label9 = nullptr;
+    label10 = nullptr;
+    dReset = nullptr;
 
 
     //[Destructor]. You can add your own custom destruction code here..
@@ -200,7 +353,6 @@ void DroneUI::resized()
     offset6->setBounds (proportionOfWidth (0.5000f), 0, proportionOfWidth (0.1000f), proportionOfHeight (0.8000f));
     offset7->setBounds (proportionOfWidth (0.6000f), 0, proportionOfWidth (0.1000f), proportionOfHeight (0.8000f));
     offset8->setBounds (proportionOfWidth (0.7000f), 0, proportionOfWidth (0.1000f), proportionOfHeight (0.8000f));
-    offset9->setBounds (proportionOfWidth (0.8000f), 0, proportionOfWidth (0.1000f), proportionOfHeight (0.8000f));
     shape2->setBounds (proportionOfWidth (0.1000f), proportionOfHeight (0.8000f), proportionOfWidth (0.1000f), proportionOfHeight (0.0500f));
     shape3->setBounds (proportionOfWidth (0.2000f), proportionOfHeight (0.8000f), proportionOfWidth (0.1000f), proportionOfHeight (0.0500f));
     shape4->setBounds (proportionOfWidth (0.3000f), proportionOfHeight (0.8000f), proportionOfWidth (0.1000f), proportionOfHeight (0.0500f));
@@ -208,7 +360,27 @@ void DroneUI::resized()
     shape6->setBounds (proportionOfWidth (0.5000f), proportionOfHeight (0.8000f), proportionOfWidth (0.1000f), proportionOfHeight (0.0500f));
     shape7->setBounds (proportionOfWidth (0.6000f), proportionOfHeight (0.8000f), proportionOfWidth (0.1000f), proportionOfHeight (0.0500f));
     shape8->setBounds (proportionOfWidth (0.7000f), proportionOfHeight (0.8000f), proportionOfWidth (0.1000f), proportionOfHeight (0.0500f));
-    shape9->setBounds (proportionOfWidth (0.8000f), proportionOfHeight (0.8000f), proportionOfWidth (0.1000f), proportionOfHeight (0.0500f));
+    rSize->setBounds (proportionOfWidth (0.8000f), 32, proportionOfWidth (0.0533f), 48);
+    rDamp->setBounds (proportionOfWidth (0.8800f), 32, proportionOfWidth (0.0533f), 48);
+    rWet->setBounds (proportionOfWidth (0.8000f), 96, proportionOfWidth (0.0533f), 48);
+    rDry->setBounds (proportionOfWidth (0.8800f), 96, proportionOfWidth (0.0533f), 48);
+    rWidth->setBounds (proportionOfWidth (0.8000f), 160, proportionOfWidth (0.0533f), 48);
+    rFreeze->setBounds (proportionOfWidth (0.8800f), 168, proportionOfWidth (0.0400f), 24);
+    label->setBounds (proportionOfWidth (0.8000f), 16, proportionOfWidth (0.0800f), 16);
+    label2->setBounds (proportionOfWidth (0.8800f), 16, 48, 16);
+    label3->setBounds (proportionOfWidth (0.8000f), 80, proportionOfWidth (0.0800f), 16);
+    label4->setBounds (proportionOfWidth (0.8800f), 80, proportionOfWidth (0.0800f), 16);
+    label5->setBounds (proportionOfWidth (0.8000f), 144, proportionOfWidth (0.0800f), 16);
+    label6->setBounds (proportionOfWidth (0.8800f), 144, 48, 16);
+    dLength->setBounds (proportionOfWidth (0.8000f), 264, proportionOfWidth (0.0533f), 48);
+    dFbk->setBounds (proportionOfWidth (0.8800f), 264, proportionOfWidth (0.0533f), 48);
+    dWet->setBounds (proportionOfWidth (0.8000f), 336, proportionOfWidth (0.0533f), 48);
+    dDry->setBounds (proportionOfWidth (0.8800f), 336, proportionOfWidth (0.0533f), 48);
+    label7->setBounds (proportionOfWidth (0.8000f), 248, proportionOfWidth (0.0800f), 16);
+    d->setBounds (proportionOfWidth (0.8000f), 320, proportionOfWidth (0.0800f), 16);
+    label9->setBounds (proportionOfWidth (0.8800f), 320, proportionOfWidth (0.0800f), 16);
+    label10->setBounds (proportionOfWidth (0.8800f), 248, proportionOfWidth (0.0800f), 16);
+    dReset->setBounds (proportionOfWidth (0.8800f), 400, proportionOfWidth (0.0600f), 32);
     //[UserResized] Add your own custom resize handling here..
     //[/UserResized]
 }
@@ -258,14 +430,65 @@ void DroneUI::sliderValueChanged (Slider* sliderThatWasMoved)
         //[UserSliderCode_offset8] -- add your slider handling code here..
         //[/UserSliderCode_offset8]
     }
-    else if (sliderThatWasMoved == offset9)
+    else if (sliderThatWasMoved == rSize)
     {
-        //[UserSliderCode_offset9] -- add your slider handling code here..
-        //[/UserSliderCode_offset9]
+        //[UserSliderCode_rSize] -- add your slider handling code here..
+        //[/UserSliderCode_rSize]
+    }
+    else if (sliderThatWasMoved == rDamp)
+    {
+        //[UserSliderCode_rDamp] -- add your slider handling code here..
+        //[/UserSliderCode_rDamp]
+    }
+    else if (sliderThatWasMoved == rWet)
+    {
+        //[UserSliderCode_rWet] -- add your slider handling code here..
+        //[/UserSliderCode_rWet]
+    }
+    else if (sliderThatWasMoved == rDry)
+    {
+        //[UserSliderCode_rDry] -- add your slider handling code here..
+        //[/UserSliderCode_rDry]
+    }
+    else if (sliderThatWasMoved == rWidth)
+    {
+        //[UserSliderCode_rWidth] -- add your slider handling code here..
+        //[/UserSliderCode_rWidth]
+    }
+    else if (sliderThatWasMoved == dLength)
+    {
+        //[UserSliderCode_dLength] -- add your slider handling code here..
+        //[/UserSliderCode_dLength]
+    }
+    else if (sliderThatWasMoved == dFbk)
+    {
+        //[UserSliderCode_dFbk] -- add your slider handling code here..
+        //[/UserSliderCode_dFbk]
+    }
+    else if (sliderThatWasMoved == dWet)
+    {
+        //[UserSliderCode_dWet] -- add your slider handling code here..
+        //[/UserSliderCode_dWet]
+    }
+    else if (sliderThatWasMoved == dDry)
+    {
+        //[UserSliderCode_dDry] -- add your slider handling code here..
+        //[/UserSliderCode_dDry]
     }
 
     //[UsersliderValueChanged_Post]
-	drone.setOffset(0, sliderThatWasMoved->getName().getIntValue(), sliderThatWasMoved->getValue());
+    if (sliderThatWasMoved->getName().startsWith("r"))
+    {
+        drone.setReverb(rSize->getValue(), rDamp->getValue(), rWet->getValue(), rDry->getValue(), rWidth->getValue(), rFreeze->getToggleState());
+    }
+    else if (sliderThatWasMoved->getName().startsWith("d"))
+    {
+        drone.setDelay(dLength->getValue(), dWet->getValue(), dDry->getValue(), dFbk->getValue());
+    }
+    else
+    {
+        drone.setOffset(0, sliderThatWasMoved->getName().getIntValue()-1, sliderThatWasMoved->getValue());
+    }
     //[/UsersliderValueChanged_Post]
 }
 
@@ -321,14 +544,21 @@ void DroneUI::buttonClicked (Button* buttonThatWasClicked)
         //[UserButtonCode_shape8] -- add your button handler code here..
         //[/UserButtonCode_shape8]
     }
-    else if (buttonThatWasClicked == shape9)
+    else if (buttonThatWasClicked == rFreeze)
     {
-        //[UserButtonCode_shape9] -- add your button handler code here..
-        //[/UserButtonCode_shape9]
+        //[UserButtonCode_rFreeze] -- add your button handler code here..
+        drone.setReverb(rSize->getValue(), rDamp->getValue(), rWet->getValue(), rDry->getValue(), rWidth->getValue(), rFreeze->getToggleState());
+        //[/UserButtonCode_rFreeze]
+    }
+    else if (buttonThatWasClicked == dReset)
+    {
+        //[UserButtonCode_dReset] -- add your button handler code here..
+        drone.resetDelay();
+        //[/UserButtonCode_dReset]
     }
 
     //[UserbuttonClicked_Post]
-	drone.setShape(0,buttonThatWasClicked->getName().getIntValue(), buttonThatWasClicked->getToggleState());
+	drone.setShape(0,buttonThatWasClicked->getName().getIntValue()-1, buttonThatWasClicked->getToggleState());
     //[/UserbuttonClicked_Post]
 }
 
@@ -355,7 +585,7 @@ BEGIN_JUCER_METADATA
   <BACKGROUND backgroundColour="ffffffff"/>
   <SLIDER name="1" id="428397bc676bcef0" memberName="offset1" virtualName=""
           explicitFocusOrder="0" pos="0% 0 10% 80%" min="-50" max="50"
-          int="0.050000000000000003" style="LinearVertical" textBoxPos="TextBoxBelow"
+          int="0.050000000000000002776" style="LinearVertical" textBoxPos="TextBoxBelow"
           textBoxEditable="1" textBoxWidth="56" textBoxHeight="16" skewFactor="1"/>
   <TOGGLEBUTTON name="new toggle button" id="79497acca0c75b76" memberName="hold"
                 virtualName="" explicitFocusOrder="0" pos="92% 80% 8% 5%" buttonText="Hold"
@@ -368,35 +598,31 @@ BEGIN_JUCER_METADATA
                 needsCallback="1" radioGroupId="0" state="0"/>
   <SLIDER name="2" id="5a86372cba62bec4" memberName="offset2" virtualName=""
           explicitFocusOrder="0" pos="10% 0 10% 80%" min="-50" max="50"
-          int="0.050000000000000003" style="LinearVertical" textBoxPos="TextBoxBelow"
+          int="0.050000000000000002776" style="LinearVertical" textBoxPos="TextBoxBelow"
           textBoxEditable="1" textBoxWidth="56" textBoxHeight="16" skewFactor="1"/>
   <SLIDER name="3" id="9835de7c44af05f3" memberName="offset3" virtualName=""
           explicitFocusOrder="0" pos="20% 0 10% 80%" min="-50" max="50"
-          int="0.050000000000000003" style="LinearVertical" textBoxPos="TextBoxBelow"
+          int="0.050000000000000002776" style="LinearVertical" textBoxPos="TextBoxBelow"
           textBoxEditable="1" textBoxWidth="56" textBoxHeight="16" skewFactor="1"/>
   <SLIDER name="4" id="d9d578504472a0a3" memberName="offset4" virtualName=""
           explicitFocusOrder="0" pos="30% 0 10% 80%" min="-50" max="50"
-          int="0.050000000000000003" style="LinearVertical" textBoxPos="TextBoxBelow"
+          int="0.050000000000000002776" style="LinearVertical" textBoxPos="TextBoxBelow"
           textBoxEditable="1" textBoxWidth="56" textBoxHeight="16" skewFactor="1"/>
   <SLIDER name="5" id="1bb761a4ac6769c5" memberName="offset5" virtualName=""
           explicitFocusOrder="0" pos="40% 0 10% 80%" min="-50" max="50"
-          int="0.050000000000000003" style="LinearVertical" textBoxPos="TextBoxBelow"
+          int="0.050000000000000002776" style="LinearVertical" textBoxPos="TextBoxBelow"
           textBoxEditable="1" textBoxWidth="56" textBoxHeight="16" skewFactor="1"/>
   <SLIDER name="6" id="6737513c7240acc6" memberName="offset6" virtualName=""
           explicitFocusOrder="0" pos="50% 0 10% 80%" min="-50" max="50"
-          int="0.050000000000000003" style="LinearVertical" textBoxPos="TextBoxBelow"
+          int="0.050000000000000002776" style="LinearVertical" textBoxPos="TextBoxBelow"
           textBoxEditable="1" textBoxWidth="56" textBoxHeight="16" skewFactor="1"/>
   <SLIDER name="7" id="fa4726b4261b4911" memberName="offset7" virtualName=""
           explicitFocusOrder="0" pos="60% 0 10% 80%" min="-50" max="50"
-          int="0.050000000000000003" style="LinearVertical" textBoxPos="TextBoxBelow"
+          int="0.050000000000000002776" style="LinearVertical" textBoxPos="TextBoxBelow"
           textBoxEditable="1" textBoxWidth="56" textBoxHeight="16" skewFactor="1"/>
   <SLIDER name="8" id="c1116d514ce09d7" memberName="offset8" virtualName=""
           explicitFocusOrder="0" pos="70% 0 10% 80%" min="-50" max="50"
-          int="0.050000000000000003" style="LinearVertical" textBoxPos="TextBoxBelow"
-          textBoxEditable="1" textBoxWidth="56" textBoxHeight="16" skewFactor="1"/>
-  <SLIDER name="9" id="b49fc92991813612" memberName="offset9" virtualName=""
-          explicitFocusOrder="0" pos="80% 0 10% 80%" min="-50" max="50"
-          int="0.050000000000000003" style="LinearVertical" textBoxPos="TextBoxBelow"
+          int="0.050000000000000002776" style="LinearVertical" textBoxPos="TextBoxBelow"
           textBoxEditable="1" textBoxWidth="56" textBoxHeight="16" skewFactor="1"/>
   <TOGGLEBUTTON name="2" id="359f79f7871da524" memberName="shape2" virtualName=""
                 explicitFocusOrder="0" pos="10% 80% 10% 5%" buttonText="Saw"
@@ -419,9 +645,98 @@ BEGIN_JUCER_METADATA
   <TOGGLEBUTTON name="8" id="97e71abe9418b6ca" memberName="shape8" virtualName=""
                 explicitFocusOrder="0" pos="70% 80% 10% 5%" buttonText="Saw"
                 connectedEdges="0" needsCallback="1" radioGroupId="0" state="0"/>
-  <TOGGLEBUTTON name="new toggle button" id="15aaa2b6bd3ddd71" memberName="shape9"
-                virtualName="" explicitFocusOrder="0" pos="80% 80% 10% 5%" buttonText="Saw"
-                connectedEdges="0" needsCallback="1" radioGroupId="0" state="0"/>
+  <SLIDER name="rSize" id="9fd7d93335c70ab8" memberName="rSize" virtualName=""
+          explicitFocusOrder="0" pos="80% 32 5.333% 48" min="0" max="255"
+          int="1" style="RotaryVerticalDrag" textBoxPos="TextBoxBelow"
+          textBoxEditable="1" textBoxWidth="32" textBoxHeight="16" skewFactor="1"/>
+  <SLIDER name="rDamp" id="ebe0be3241cea246" memberName="rDamp" virtualName=""
+          explicitFocusOrder="0" pos="88% 32 5.333% 48" min="0" max="255"
+          int="1" style="RotaryVerticalDrag" textBoxPos="TextBoxBelow"
+          textBoxEditable="1" textBoxWidth="32" textBoxHeight="16" skewFactor="1"/>
+  <SLIDER name="rWet" id="2b855724a35f9e76" memberName="rWet" virtualName=""
+          explicitFocusOrder="0" pos="80% 96 5.333% 48" min="0" max="255"
+          int="1" style="RotaryVerticalDrag" textBoxPos="TextBoxBelow"
+          textBoxEditable="1" textBoxWidth="32" textBoxHeight="16" skewFactor="1"/>
+  <SLIDER name="rDry" id="e6854687379bed26" memberName="rDry" virtualName=""
+          explicitFocusOrder="0" pos="88% 96 5.333% 48" min="0" max="255"
+          int="1" style="RotaryVerticalDrag" textBoxPos="TextBoxBelow"
+          textBoxEditable="1" textBoxWidth="32" textBoxHeight="16" skewFactor="1"/>
+  <SLIDER name="rWidth" id="1116aacb25c16ae0" memberName="rWidth" virtualName=""
+          explicitFocusOrder="0" pos="80% 160 5.333% 48" min="0" max="255"
+          int="1" style="RotaryVerticalDrag" textBoxPos="TextBoxBelow"
+          textBoxEditable="1" textBoxWidth="32" textBoxHeight="16" skewFactor="1"/>
+  <TOGGLEBUTTON name="rFreeze" id="fef06258f770a184" memberName="rFreeze" virtualName=""
+                explicitFocusOrder="0" pos="88% 168 4% 24" buttonText="" connectedEdges="0"
+                needsCallback="1" radioGroupId="0" state="0"/>
+  <LABEL name="new label" id="d25b56ed3de3f3ba" memberName="label" virtualName=""
+         explicitFocusOrder="0" pos="80% 16 8% 16" edTextCol="ff000000"
+         edBkgCol="0" labelText="Size" editableSingleClick="0" editableDoubleClick="0"
+         focusDiscardsChanges="0" fontname="Default font" fontsize="14"
+         bold="0" italic="0" justification="33"/>
+  <LABEL name="new label" id="bd9203d410fa9830" memberName="label2" virtualName=""
+         explicitFocusOrder="0" pos="88% 16 48 16" edTextCol="ff000000"
+         edBkgCol="0" labelText="Damp" editableSingleClick="0" editableDoubleClick="0"
+         focusDiscardsChanges="0" fontname="Default font" fontsize="14"
+         bold="0" italic="0" justification="33"/>
+  <LABEL name="new label" id="a68e6170aa740fb0" memberName="label3" virtualName=""
+         explicitFocusOrder="0" pos="80% 80 8% 16" edTextCol="ff000000"
+         edBkgCol="0" labelText="Wet" editableSingleClick="0" editableDoubleClick="0"
+         focusDiscardsChanges="0" fontname="Default font" fontsize="14"
+         bold="0" italic="0" justification="33"/>
+  <LABEL name="new label" id="1f8a3fe24d3ffa54" memberName="label4" virtualName=""
+         explicitFocusOrder="0" pos="88% 80 8% 16" edTextCol="ff000000"
+         edBkgCol="0" labelText="Dry" editableSingleClick="0" editableDoubleClick="0"
+         focusDiscardsChanges="0" fontname="Default font" fontsize="14"
+         bold="0" italic="0" justification="33"/>
+  <LABEL name="new label" id="f7397ea9510b8864" memberName="label5" virtualName=""
+         explicitFocusOrder="0" pos="80% 144 8% 16" edTextCol="ff000000"
+         edBkgCol="0" labelText="Width" editableSingleClick="0" editableDoubleClick="0"
+         focusDiscardsChanges="0" fontname="Default font" fontsize="14"
+         bold="0" italic="0" justification="33"/>
+  <LABEL name="new label" id="a5f9df75880b9233" memberName="label6" virtualName=""
+         explicitFocusOrder="0" pos="88% 144 48 16" edTextCol="ff000000"
+         edBkgCol="0" labelText="Freeze" editableSingleClick="0" editableDoubleClick="0"
+         focusDiscardsChanges="0" fontname="Default font" fontsize="14"
+         bold="0" italic="0" justification="33"/>
+  <SLIDER name="dLength" id="d77a5182647bb086" memberName="dLength" virtualName=""
+          explicitFocusOrder="0" pos="80% 264 5.333% 48" min="0" max="10"
+          int="0.050000000000000002776" style="RotaryVerticalDrag" textBoxPos="TextBoxBelow"
+          textBoxEditable="1" textBoxWidth="32" textBoxHeight="16" skewFactor="1"/>
+  <SLIDER name="dFbk" id="24ad4df0bd1edde" memberName="dFbk" virtualName=""
+          explicitFocusOrder="0" pos="88% 264 5.333% 48" min="0" max="255"
+          int="1" style="RotaryVerticalDrag" textBoxPos="TextBoxBelow"
+          textBoxEditable="1" textBoxWidth="32" textBoxHeight="16" skewFactor="1"/>
+  <SLIDER name="dWet" id="46d9abeb252f6224" memberName="dWet" virtualName=""
+          explicitFocusOrder="0" pos="80% 336 5.333% 48" min="0" max="255"
+          int="1" style="RotaryVerticalDrag" textBoxPos="TextBoxBelow"
+          textBoxEditable="1" textBoxWidth="32" textBoxHeight="16" skewFactor="1"/>
+  <SLIDER name="dDry" id="512f0ea80bdbc8fe" memberName="dDry" virtualName=""
+          explicitFocusOrder="0" pos="88% 336 5.333% 48" min="0" max="255"
+          int="1" style="RotaryVerticalDrag" textBoxPos="TextBoxBelow"
+          textBoxEditable="1" textBoxWidth="32" textBoxHeight="16" skewFactor="1"/>
+  <LABEL name="new label" id="67ee98d13e14a9e0" memberName="label7" virtualName=""
+         explicitFocusOrder="0" pos="80% 248 8% 16" edTextCol="ff000000"
+         edBkgCol="0" labelText="Length" editableSingleClick="0" editableDoubleClick="0"
+         focusDiscardsChanges="0" fontname="Default font" fontsize="14"
+         bold="0" italic="0" justification="33"/>
+  <LABEL name="new label" id="37d2a342f3123f9e" memberName="d" virtualName=""
+         explicitFocusOrder="0" pos="80% 320 8% 16" edTextCol="ff000000"
+         edBkgCol="0" labelText="Wet" editableSingleClick="0" editableDoubleClick="0"
+         focusDiscardsChanges="0" fontname="Default font" fontsize="14"
+         bold="0" italic="0" justification="33"/>
+  <LABEL name="new label" id="f6394f967cbac542" memberName="label9" virtualName=""
+         explicitFocusOrder="0" pos="88% 320 8% 16" edTextCol="ff000000"
+         edBkgCol="0" labelText="Dry" editableSingleClick="0" editableDoubleClick="0"
+         focusDiscardsChanges="0" fontname="Default font" fontsize="14"
+         bold="0" italic="0" justification="33"/>
+  <LABEL name="new label" id="40042a110e7d3c1f" memberName="label10" virtualName=""
+         explicitFocusOrder="0" pos="88% 248 8% 16" edTextCol="ff000000"
+         edBkgCol="0" labelText="Feedback" editableSingleClick="0" editableDoubleClick="0"
+         focusDiscardsChanges="0" fontname="Default font" fontsize="14"
+         bold="0" italic="0" justification="33"/>
+  <TEXTBUTTON name="dReset" id="86260a15e83f7a09" memberName="dReset" virtualName=""
+              explicitFocusOrder="0" pos="88% 400 6% 32" buttonText="RST" connectedEdges="0"
+              needsCallback="1" radioGroupId="0"/>
 </JUCER_COMPONENT>
 
 END_JUCER_METADATA

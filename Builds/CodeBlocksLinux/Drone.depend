@@ -24,7 +24,7 @@
 	"sources/juce_ToneGeneratorAudioSource.cpp"
 	"synthesisers/juce_Synthesiser.cpp"
 
-1447782095 /home/r.kubiak/devel/Drone/JuceLibraryCode/AppConfig.h
+1447847369 /home/r.kubiak/devel/Drone/JuceLibraryCode/AppConfig.h
 
 1446740211 /home/r.kubiak/devel/JUCE/modules/juce_audio_basics/juce_audio_basics.h
 	"../juce_core/juce_core.h"
@@ -4284,10 +4284,10 @@
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_video/capture/juce_CameraDevice.cpp
 
-1447780464 source:/home/r.kubiak/devel/Drone/Source/Main.cpp
+1447849372 source:/home/r.kubiak/devel/Drone/Source/Main.cpp
 	"../JuceLibraryCode/JuceHeader.h"
 
-1447782095 /home/r.kubiak/devel/Drone/JuceLibraryCode/JuceHeader.h
+1447847369 /home/r.kubiak/devel/Drone/JuceLibraryCode/JuceHeader.h
 	"AppConfig.h"
 	"modules/juce_audio_basics/juce_audio_basics.h"
 	"modules/juce_audio_devices/juce_audio_devices.h"
@@ -4295,54 +4295,51 @@
 	"modules/juce_audio_processors/juce_audio_processors.h"
 	"modules/juce_audio_utils/juce_audio_utils.h"
 	"modules/juce_core/juce_core.h"
-	"modules/juce_cryptography/juce_cryptography.h"
 	"modules/juce_data_structures/juce_data_structures.h"
 	"modules/juce_events/juce_events.h"
 	"modules/juce_graphics/juce_graphics.h"
 	"modules/juce_gui_basics/juce_gui_basics.h"
 	"modules/juce_gui_extra/juce_gui_extra.h"
-	"modules/juce_opengl/juce_opengl.h"
-	"modules/juce_video/juce_video.h"
 	"modules/stk_core/stk_core.h"
 	"modules/stk_effects/stk_effects.h"
 	"modules/stk_filters/stk_filters.h"
 	"modules/stk_generators/stk_generators.h"
 	"modules/stk_generators_extra/stk_generators_extra.h"
 
-1447686534 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/juce_audio_basics/juce_audio_basics.h
+1447847369 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/juce_audio_basics/juce_audio_basics.h
 	"../../../../JUCE/modules/juce_audio_basics/juce_audio_basics.h"
 
-1447686534 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/juce_audio_devices/juce_audio_devices.h
+1447847369 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/juce_audio_devices/juce_audio_devices.h
 	"../../../../JUCE/modules/juce_audio_devices/juce_audio_devices.h"
 
-1447686534 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/juce_audio_formats/juce_audio_formats.h
+1447847369 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/juce_audio_formats/juce_audio_formats.h
 	"../../../../JUCE/modules/juce_audio_formats/juce_audio_formats.h"
 
-1447686534 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/juce_audio_processors/juce_audio_processors.h
+1447847369 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/juce_audio_processors/juce_audio_processors.h
 	"../../../../JUCE/modules/juce_audio_processors/juce_audio_processors.h"
 
-1447686534 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/juce_audio_utils/juce_audio_utils.h
+1447847369 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/juce_audio_utils/juce_audio_utils.h
 	"../../../../JUCE/modules/juce_audio_utils/juce_audio_utils.h"
 
-1447686534 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/juce_core/juce_core.h
+1447847369 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/juce_core/juce_core.h
 	"../../../../JUCE/modules/juce_core/juce_core.h"
 
 1447686534 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/juce_cryptography/juce_cryptography.h
 	"../../../../JUCE/modules/juce_cryptography/juce_cryptography.h"
 
-1447686534 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/juce_data_structures/juce_data_structures.h
+1447847369 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/juce_data_structures/juce_data_structures.h
 	"../../../../JUCE/modules/juce_data_structures/juce_data_structures.h"
 
-1447686534 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/juce_events/juce_events.h
+1447847369 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/juce_events/juce_events.h
 	"../../../../JUCE/modules/juce_events/juce_events.h"
 
-1447686534 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/juce_graphics/juce_graphics.h
+1447847369 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/juce_graphics/juce_graphics.h
 	"../../../../JUCE/modules/juce_graphics/juce_graphics.h"
 
-1447686534 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/juce_gui_basics/juce_gui_basics.h
+1447847369 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/juce_gui_basics/juce_gui_basics.h
 	"../../../../JUCE/modules/juce_gui_basics/juce_gui_basics.h"
 
-1447686534 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/juce_gui_extra/juce_gui_extra.h
+1447847369 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/juce_gui_extra/juce_gui_extra.h
 	"../../../../JUCE/modules/juce_gui_extra/juce_gui_extra.h"
 
 1447686534 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/juce_opengl/juce_opengl.h
@@ -4361,39 +4358,39 @@
 1447688757 source:/home/r.kubiak/devel/Drone/Source/SineWaveBundle.cpp
 	"SineWaveBundle.h"
 
-1447780464 source:/home/r.kubiak/devel/Drone/Source/DroneUI.cpp
+1447860569 source:/home/r.kubiak/devel/Drone/Source/DroneUI.cpp
 	"Drone.h"
 	"DroneUI.h"
 
-1447780464 /home/r.kubiak/devel/Drone/Source/DroneUI.h
+1447860919 /home/r.kubiak/devel/Drone/Source/DroneUI.h
 	"JuceHeader.h"
-	"DroneScope.h"
 
-1447780539 source:/home/r.kubiak/devel/Drone/Source/DroneEngine.cpp
+1447857963 source:/home/r.kubiak/devel/Drone/Source/DroneEngine.cpp
 	"DroneEngine.h"
 
-1447692800 /home/r.kubiak/devel/Drone/Source/DroneEngine.h
+1447849538 /home/r.kubiak/devel/Drone/Source/DroneEngine.h
 	"../JuceLibraryCode/JuceHeader.h"
 
-1447780583 source:/home/r.kubiak/devel/Drone/Source/Drone.cpp
+1447860367 source:/home/r.kubiak/devel/Drone/Source/Drone.cpp
 	"Drone.h"
 	"DroneUI.h"
 	"DroneEngine.h"
 
-1447777006 /home/r.kubiak/devel/Drone/Source/Drone.h
+1447859879 /home/r.kubiak/devel/Drone/Source/Drone.h
 	"JuceHeader.h"
 	"DroneUI.h"
+	"DroneDelay.h"
 
-1447780464 /home/r.kubiak/devel/Drone/Source/DroneScope.h
+1447849372 /home/r.kubiak/devel/Drone/Source/DroneScope.h
 	"dRowAudio_AudioOscilloscope.h"
 
-1447780607 source:/home/r.kubiak/devel/Drone/Source/DroneScope.cpp
+1447849372 source:/home/r.kubiak/devel/Drone/Source/DroneScope.cpp
 	"DroneScope.h"
 
-1447780232 source:/home/r.kubiak/devel/Drone/Source/dRowAudio_AudioOscilloscope.cpp
+1447847255 source:/home/r.kubiak/devel/Drone/Source/dRowAudio_AudioOscilloscope.cpp
 	"dRowAudio_AudioOscilloscope.h"
 
-1447776618 /home/r.kubiak/devel/Drone/Source/dRowAudio_AudioOscilloscope.h
+1447847255 /home/r.kubiak/devel/Drone/Source/dRowAudio_AudioOscilloscope.h
 	"JuceHeader.h"
 
 1447782048 source:/home/r.kubiak/devel/JUCE/modules/stk_core/stk_core.cpp
@@ -4937,18 +4934,550 @@
 	"SineWave.h"
 	<cmath>
 
-1447782216 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_core/stk_core.h
-	"../../../../JUCE/modules/stk_core/stk_core.h"
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_core/stk_core.h
+	"../juce_core/juce_core.h"
+	"stk/Stk.h"
+	"stk/Effect.h"
+	"stk/Filter.h"
+	"stk/Generator.h"
+	"stk/Instrmnt.h"
+	"stk/Voicer.h"
+	"stk/Phonemes.h"
+	"stk/Sphere.h"
+	"stk/Vector3D.h"
+	"stk/Function.h"
+	"functions/BowTable.h"
+	"functions/Cubic.h"
+	"functions/JetTable.h"
+	"functions/ReedTable.h"
+	"io/FileRead.h"
+	"io/FileWrite.h"
+	"io/FileWvIn.h"
+	"io/FileWvOut.h"
+	"io/WvIn.h"
+	"io/WvOut.h"
 
-1447782216 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_effects/stk_effects.h
-	"../../../../JUCE/modules/stk_effects/stk_effects.h"
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_effects/stk_effects.h
+	"../juce_core/juce_core.h"
+	"../stk_core/stk_core.h"
+	"effects/Chorus.h"
+	"effects/Echo.h"
+	"effects/FreeVerb.h"
+	"effects/JCRev.h"
+	"effects/LentPitShift.h"
+	"effects/NRev.h"
+	"effects/PitShift.h"
+	"effects/PRCRev.h"
 
-1447782216 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_filters/stk_filters.h
-	"../../../../JUCE/modules/stk_filters/stk_filters.h"
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_filters/stk_filters.h
+	"../juce_core/juce_core.h"
+	"../stk_core/stk_core.h"
+	"filters/BiQuad.h"
+	"filters/Delay.h"
+	"filters/DelayA.h"
+	"filters/DelayL.h"
+	"filters/Fir.h"
+	"filters/FormSwep.h"
+	"filters/Iir.h"
+	"filters/OnePole.h"
+	"filters/OneZero.h"
+	"filters/PoleZero.h"
+	"filters/TapDelay.h"
+	"filters/TwoPole.h"
+	"filters/TwoZero.h"
 
-1447782216 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators/stk_generators.h
-	"../../../../JUCE/modules/stk_generators/stk_generators.h"
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators/stk_generators.h
+	"../juce_core/juce_core.h"
+	"../stk_core/stk_core.h"
+	"generators/ADSR.h"
+	"generators/Asymp.h"
+	"generators/Blit.h"
+	"generators/BlitSaw.h"
+	"generators/BlitSquare.h"
+	"generators/FileLoop.h"
+	"generators/Envelope.h"
+	"generators/Granulate.h"
+	"generators/Noise.h"
+	"generators/SineWave.h"
 
-1447782216 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators_extra/stk_generators_extra.h
-	"../../../../JUCE/modules/stk_generators_extra/stk_generators_extra.h"
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators_extra/stk_generators_extra.h
+	"../juce_core/juce_core.h"
+	"../stk_core/stk_core.h"
+	"generators/Modulate.h"
+	"generators/SingWave.h"
+
+1447859488 source:/home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_core/stk_core.cpp
+	"AppConfig.h"
+	"stk_core.h"
+	"stk/Phonemes.cpp"
+	"stk/Sphere.cpp"
+	"stk/Stk.cpp"
+	"stk/Voicer.cpp"
+	"io/FileRead.cpp"
+	"io/FileWrite.cpp"
+	"io/FileWvIn.cpp"
+	"io/FileWvOut.cpp"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_core/stk/Stk.h
+	<string>
+	<cstring>
+	<iostream>
+	<sstream>
+	<vector>
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_core/stk/Effect.h
+	"Stk.h"
+	<cmath>
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_core/stk/Filter.h
+	"Stk.h"
+	<vector>
+	<cmath>
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_core/stk/Generator.h
+	"Stk.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_core/stk/Instrmnt.h
+	"Stk.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_core/stk/Voicer.h
+	"Instrmnt.h"
+	<vector>
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_core/stk/Phonemes.h
+	"Stk.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_core/stk/Sphere.h
+	"Stk.h"
+	"Vector3D.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_core/stk/Vector3D.h
+	"Stk.h"
+	<cmath>
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_core/stk/Function.h
+	"Stk.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_core/functions/BowTable.h
+	"Function.h"
+	<cmath>
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_core/functions/Function.h
+	"../stk/Function.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_core/functions/Cubic.h
+	"Function.h"
+	<cmath>
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_core/functions/JetTable.h
+	"Function.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_core/functions/ReedTable.h
+	"Function.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_core/io/FileRead.h
+	"Stk.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_core/io/Stk.h
+	"../stk/Stk.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_core/io/FileWrite.h
+	"Stk.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_core/io/FileWvIn.h
+	"WvIn.h"
+	"FileRead.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_core/io/WvIn.h
+	"Stk.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_core/io/FileWvOut.h
+	"WvOut.h"
+	"FileWrite.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_core/io/WvOut.h
+	"Stk.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_core/stk/Phonemes.cpp
+	"Phonemes.h"
+	<iostream>
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_core/stk/Sphere.cpp
+	"Sphere.h"
+	<cmath>
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_core/stk/Stk.cpp
+	"Stk.h"
+	<stdlib.h>
+	<unistd.h>
+	<windows.h>
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_core/stk/Voicer.cpp
+	"Voicer.h"
+	<cmath>
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_core/io/FileRead.cpp
+	"FileRead.h"
+	<sys/stat.h>
+	<sys/types.h>
+	<cstring>
+	<cmath>
+	<cstdio>
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_core/io/FileWrite.cpp
+	"FileWrite.h"
+	<string>
+	<cstdio>
+	<cstring>
+	<cmath>
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_core/io/FileWvIn.cpp
+	"FileWvIn.h"
+	<cmath>
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_core/io/FileWvOut.cpp
+	"FileWvOut.h"
+
+1447859488 source:/home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_effects/stk_effects.cpp
+	"AppConfig.h"
+	"stk_effects.h"
+	"effects/Chorus.cpp"
+	"effects/Echo.cpp"
+	"effects/FreeVerb.cpp"
+	"effects/JCRev.cpp"
+	"effects/LentPitShift.cpp"
+	"effects/NRev.cpp"
+	"effects/PitShift.cpp"
+	"effects/PRCRev.cpp"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_effects/effects/Chorus.h
+	"Effect.h"
+	"DelayL.h"
+	"SineWave.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_effects/effects/Effect.h
+	"../../stk_core/stk/Effect.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_effects/effects/DelayL.h
+	"../../stk_filters/filters/DelayL.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_filters/filters/DelayL.h
+	"Filter.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_filters/filters/Filter.h
+	"../../stk_core/stk/Filter.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_effects/effects/SineWave.h
+	"../../stk_generators/generators/SineWave.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators/generators/SineWave.h
+	"Generator.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators/generators/Generator.h
+	"../../stk_core/stk/Generator.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_effects/effects/Echo.h
+	"Effect.h"
+	"Delay.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_effects/effects/Delay.h
+	"../../stk_filters/filters/Delay.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_filters/filters/Delay.h
+	"Filter.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_effects/effects/FreeVerb.h
+	"Effect.h"
+	"Delay.h"
+	"OnePole.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_effects/effects/OnePole.h
+	"../../stk_filters/filters/OnePole.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_filters/filters/OnePole.h
+	"Filter.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_effects/effects/JCRev.h
+	"Effect.h"
+	"Delay.h"
+	"OnePole.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_effects/effects/LentPitShift.h
+	"Effect.h"
+	"Delay.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_effects/effects/NRev.h
+	"Effect.h"
+	"Delay.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_effects/effects/PitShift.h
+	"Effect.h"
+	"DelayL.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_effects/effects/PRCRev.h
+	"Effect.h"
+	"Delay.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_effects/effects/Chorus.cpp
+	"Chorus.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_effects/effects/Echo.cpp
+	"Echo.h"
+	<iostream>
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_effects/effects/FreeVerb.cpp
+	"FreeVerb.h"
+	<cmath>
+	<iostream>
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_effects/effects/JCRev.cpp
+	"JCRev.h"
+	<cmath>
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_effects/effects/LentPitShift.cpp
+	"LentPitShift.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_effects/effects/NRev.cpp
+	"NRev.h"
+	<cmath>
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_effects/effects/PitShift.cpp
+	"PitShift.h"
+	<cmath>
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_effects/effects/PRCRev.cpp
+	"PRCRev.h"
+	<cmath>
+
+1447859488 source:/home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_filters/stk_filters.cpp
+	"AppConfig.h"
+	"stk_filters.h"
+	"filters/BiQuad.cpp"
+	"filters/Delay.cpp"
+	"filters/DelayA.cpp"
+	"filters/DelayL.cpp"
+	"filters/Fir.cpp"
+	"filters/FormSwep.cpp"
+	"filters/Iir.cpp"
+	"filters/OnePole.cpp"
+	"filters/OneZero.cpp"
+	"filters/PoleZero.cpp"
+	"filters/TapDelay.cpp"
+	"filters/TwoPole.cpp"
+	"filters/TwoZero.cpp"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_filters/filters/BiQuad.h
+	"Filter.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_filters/filters/DelayA.h
+	"Filter.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_filters/filters/Fir.h
+	"Filter.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_filters/filters/FormSwep.h
+	"Filter.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_filters/filters/Iir.h
+	"Filter.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_filters/filters/OneZero.h
+	"Filter.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_filters/filters/PoleZero.h
+	"Filter.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_filters/filters/TapDelay.h
+	"Filter.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_filters/filters/TwoPole.h
+	"Filter.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_filters/filters/TwoZero.h
+	"Filter.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_filters/filters/BiQuad.cpp
+	"BiQuad.h"
+	<cmath>
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_filters/filters/Delay.cpp
+	"Delay.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_filters/filters/DelayA.cpp
+	"DelayA.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_filters/filters/DelayL.cpp
+	"DelayL.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_filters/filters/Fir.cpp
+	"Fir.h"
+	<cmath>
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_filters/filters/FormSwep.cpp
+	"FormSwep.h"
+	<cmath>
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_filters/filters/Iir.cpp
+	"Iir.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_filters/filters/OnePole.cpp
+	"OnePole.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_filters/filters/OneZero.cpp
+	"OneZero.h"
+	<cmath>
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_filters/filters/PoleZero.cpp
+	"PoleZero.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_filters/filters/TapDelay.cpp
+	"TapDelay.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_filters/filters/TwoPole.cpp
+	"TwoPole.h"
+	<cmath>
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_filters/filters/TwoZero.cpp
+	"TwoZero.h"
+	<cmath>
+
+1447859488 source:/home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators/stk_generators.cpp
+	"AppConfig.h"
+	"stk_generators.h"
+	"generators/ADSR.cpp"
+	"generators/Asymp.cpp"
+	"generators/Blit.cpp"
+	"generators/BlitSaw.cpp"
+	"generators/BlitSquare.cpp"
+	"generators/FileLoop.cpp"
+	"generators/Envelope.cpp"
+	"generators/Granulate.cpp"
+	"generators/Noise.cpp"
+	"generators/SineWave.cpp"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators/generators/ADSR.h
+	"Generator.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators/generators/Asymp.h
+	"Generator.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators/generators/Blit.h
+	"Generator.h"
+	<cmath>
+	<limits>
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators/generators/BlitSaw.h
+	"Generator.h"
+	<cmath>
+	<limits>
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators/generators/BlitSquare.h
+	"Generator.h"
+	<cmath>
+	<limits>
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators/generators/FileLoop.h
+	"FileWvIn.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators/generators/FileWvIn.h
+	"../../stk_core/io/FileWvIn.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators/generators/Envelope.h
+	"Generator.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators/generators/Granulate.h
+	<vector>
+	"Generator.h"
+	"Envelope.h"
+	"Noise.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators/generators/Noise.h
+	"Generator.h"
+	<stdlib.h>
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators/generators/ADSR.cpp
+	"ADSR.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators/generators/Asymp.cpp
+	"Asymp.h"
+	<cmath>
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators/generators/Blit.cpp
+	"Blit.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators/generators/BlitSaw.cpp
+	"BlitSaw.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators/generators/BlitSquare.cpp
+	"BlitSquare.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators/generators/FileLoop.cpp
+	"FileLoop.h"
+	<cmath>
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators/generators/Envelope.cpp
+	"Envelope.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators/generators/Granulate.cpp
+	"Granulate.h"
+	"FileRead.h"
+	<cmath>
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators/generators/FileRead.h
+	"../../stk_core/io/FileRead.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators/generators/Noise.cpp
+	"Noise.h"
+	<time.h>
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators/generators/SineWave.cpp
+	"SineWave.h"
+	<cmath>
+
+1447859488 source:/home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators_extra/stk_generators_extra.cpp
+	"AppConfig.h"
+	"stk_generators_extra.h"
+	"generators/Modulate.cpp"
+	"generators/SingWave.cpp"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators_extra/generators/Modulate.h
+	"Generator.h"
+	"SineWave.h"
+	"Noise.h"
+	"OnePole.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators_extra/generators/Generator.h
+	"../../stk_core/stk/Generator.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators_extra/generators/SineWave.h
+	"../../stk_generators/generators/SineWave.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators_extra/generators/Noise.h
+	"../../stk_generators/generators/Noise.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators_extra/generators/OnePole.h
+	"../../stk_filters/filters/OnePole.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators_extra/generators/SingWave.h
+	"FileLoop.h"
+	"Modulate.h"
+	"Envelope.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators_extra/generators/FileLoop.h
+	"../../stk_generators/generators/FileLoop.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators_extra/generators/Envelope.h
+	"../../stk_generators/generators/Envelope.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators_extra/generators/Modulate.cpp
+	"Modulate.h"
+
+1447859488 /home/r.kubiak/devel/Drone/JuceLibraryCode/modules/stk_generators_extra/generators/SingWave.cpp
+	"SingWave.h"
+
+1447859923 /home/r.kubiak/devel/Drone/Source/DroneDelay.h
+	"../JuceLibraryCode/JuceHeader.h"
+
+1447860433 source:/home/r.kubiak/devel/Drone/Source/DroneDelay.cpp
+	"DroneDelay.h"
 

@@ -1,59 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
-	<ActiveTarget name="Release" />
-	<File name="../../../JUCE/modules/juce_audio_utils/gui/juce_MidiKeyboardComponent.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="867" />
-		</Cursor>
-	</File>
-	<File name="../../../JUCE/modules/stk_generators/stk_generators.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2394" topLine="34" />
-		</Cursor>
-	</File>
-	<File name="../../../JUCE/modules/juce_audio_utils/gui/juce_AudioAppComponent.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="5037" topLine="87" />
-		</Cursor>
-	</File>
-	<File name="../../Source/DroneScope.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1932" topLine="36" />
-		</Cursor>
-	</File>
-	<File name="../../../JUCE/modules/juce_audio_utils/gui/juce_AudioVisualiserComponent.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="5060" topLine="145" />
-		</Cursor>
-	</File>
-	<File name="../../../JUCE/modules/stk_filters/stk_filters.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2388" topLine="34" />
-		</Cursor>
-	</File>
-	<File name="../../Source/DroneUI.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1787" topLine="42" />
-		</Cursor>
-	</File>
+	<ActiveTarget name="Debug" />
 	<File name="../../Source/DroneScope.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="1704" topLine="30" />
 		</Cursor>
 	</File>
-	<File name="../../Source/dRowAudio_AudioOscilloscope.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="../../JuceLibraryCode/modules/stk_core/stk/Stk.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3554" topLine="92" />
-		</Cursor>
-	</File>
-	<File name="../../Source/Drone.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="796" topLine="10" />
-		</Cursor>
-	</File>
-	<File name="../../../JUCE/modules/stk_effects/stk_effects.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2388" topLine="34" />
+			<Cursor1 position="5430" topLine="123" />
 		</Cursor>
 	</File>
 	<File name="../../Source/dRowAudio_AudioOscilloscope.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -61,44 +16,84 @@
 			<Cursor1 position="4460" topLine="67" />
 		</Cursor>
 	</File>
-	<File name="../../Source/DroneUI.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="../../Source/DroneUI.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3192" topLine="50" />
+			<Cursor1 position="1787" topLine="42" />
 		</Cursor>
 	</File>
-	<File name="../../../JUCE/modules/juce_cryptography/juce_cryptography.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="../../Source/DroneDelay.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="13" />
+			<Cursor1 position="6219" topLine="208" />
 		</Cursor>
 	</File>
-	<File name="../../../JUCE/modules/stk_core/stk_core.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="../../Source/DroneEngine.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2346" topLine="34" />
+			<Cursor1 position="1439" topLine="18" />
 		</Cursor>
 	</File>
-	<File name="../../../JUCE/modules/juce_audio_utils/gui/juce_AudioVisualiserComponent.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="../../JuceLibraryCode/modules/stk_generators/generators/Blit.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="27" />
+			<Cursor1 position="0" topLine="60" />
 		</Cursor>
 	</File>
-	<File name="../../Source/Drone.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="../../Source/DroneScope.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1565" topLine="46" />
+			<Cursor1 position="1932" topLine="36" />
 		</Cursor>
 	</File>
-	<File name="../../Source/DroneEngine.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="../../JuceLibraryCode/modules/stk_generators_extra/generators/SingWave.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3934" topLine="0" />
+			<Cursor1 position="0" topLine="21" />
 		</Cursor>
 	</File>
-	<File name="../../Source/DroneEngine.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="../../../JUCE/modules/juce_audio_utils/gui/juce_MidiKeyboardComponent.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="939" topLine="2" />
+			<Cursor1 position="0" topLine="867" />
 		</Cursor>
 	</File>
-	<File name="../../../JUCE/modules/stk_generators_extra/stk_generators_extra.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="../../Source/DroneDelay.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2370" topLine="34" />
+			<Cursor1 position="2110" topLine="91" />
+		</Cursor>
+	</File>
+	<File name="../../JuceLibraryCode/modules/stk_generators/generators/Envelope.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="100" />
+		</Cursor>
+	</File>
+	<File name="../../Source/DroneUI.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="22667" topLine="538" />
+		</Cursor>
+	</File>
+	<File name="../../Source/DroneEngine.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="99" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../../Source/Drone.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1061" topLine="17" />
+		</Cursor>
+	</File>
+	<File name="../../Source/Drone.cpp" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3353" topLine="103" />
+		</Cursor>
+	</File>
+	<File name="../../JuceLibraryCode/modules/stk_core/stk_core.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2344" topLine="19" />
+		</Cursor>
+	</File>
+	<File name="../../../JUCE/modules/juce_audio_utils/gui/juce_AudioAppComponent.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5037" topLine="87" />
+		</Cursor>
+	</File>
+	<File name="../../Source/dRowAudio_AudioOscilloscope.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3554" topLine="92" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

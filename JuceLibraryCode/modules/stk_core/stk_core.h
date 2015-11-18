@@ -47,7 +47,7 @@
 #ifndef __STK_CORE_HEADER__
 #define __STK_CORE_HEADER__
 
-#include "juce_core/juce_core.h"
+#include "../juce_core/juce_core.h"
 
 #if JUCE_LITTLE_ENDIAN && ! defined (__LITTLE_ENDIAN__)
  #define __LITTLE_ENDIAN__

@@ -14,6 +14,7 @@
 #include "JuceHeader.h"
 
 #include "DroneUI.h"
+#include "DroneDelay.h"
 
 class Drone   : public AudioAppComponent
 {
@@ -28,13 +29,18 @@ class Drone   : public AudioAppComponent
         void setOffset (uint8 bundle, uint8 voice, double offset);
 		void setShape (uint8 bundle, uint8 voice, bool isSaw);
         void setHold(const bool _hold);
-
+		void setReverb(double roomSize, double damping, double wetLevel, double dryLevel, double width, bool freezeMode);
+		void setDelay(double length, double wetLevel, double dryLevel, double feedbackLevel);
+		void resetDelay();
 	private:
 		MidiKeyboardState keyboardState;
 		MidiMessageCollector midiCollector;
 		Synthesiser synth;
 		ScopedPointer<DroneUI> droneUI;
 		bool hold;
+		Reverb reverb;
+		DroneDelayProcessor droneDelay;
+		Reverb::Parameters reverbParameters;
 		JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (Drone)
 };
 

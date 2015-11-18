@@ -7,7 +7,7 @@
   the "//[xyz]" and "//[/xyz]" sections will be retained when the file is loaded
   and re-saved.
 
-  Created with Introjucer version: 3.2.0
+  Created with Introjucer version: 4.0.1
 
   ------------------------------------------------------------------------------
 
@@ -73,7 +73,6 @@ private:
     ScopedPointer<Slider> offset6;
     ScopedPointer<Slider> offset7;
     ScopedPointer<Slider> offset8;
-    ScopedPointer<Slider> offset9;
     ScopedPointer<ToggleButton> shape2;
     ScopedPointer<ToggleButton> shape3;
     ScopedPointer<ToggleButton> shape4;
@@ -81,7 +80,27 @@ private:
     ScopedPointer<ToggleButton> shape6;
     ScopedPointer<ToggleButton> shape7;
     ScopedPointer<ToggleButton> shape8;
-    ScopedPointer<ToggleButton> shape9;
+    ScopedPointer<Slider> rSize;
+    ScopedPointer<Slider> rDamp;
+    ScopedPointer<Slider> rWet;
+    ScopedPointer<Slider> rDry;
+    ScopedPointer<Slider> rWidth;
+    ScopedPointer<ToggleButton> rFreeze;
+    ScopedPointer<Label> label;
+    ScopedPointer<Label> label2;
+    ScopedPointer<Label> label3;
+    ScopedPointer<Label> label4;
+    ScopedPointer<Label> label5;
+    ScopedPointer<Label> label6;
+    ScopedPointer<Slider> dLength;
+    ScopedPointer<Slider> dFbk;
+    ScopedPointer<Slider> dWet;
+    ScopedPointer<Slider> dDry;
+    ScopedPointer<Label> label7;
+    ScopedPointer<Label> d;
+    ScopedPointer<Label> label9;
+    ScopedPointer<Label> label10;
+    ScopedPointer<TextButton> dReset;
 
 
     //==============================================================================

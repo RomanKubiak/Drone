@@ -35,7 +35,7 @@ class DroneSingle : public SynthesiserVoice
 
 	private:
 		double currentAngle, angleDelta, level, tailOff, offset;
-		int lastNoteNumber;
+		int lastMidiNoteNumber;
 		stk::BlitSaw stkSaw;
 		Shape currentShape;
 };

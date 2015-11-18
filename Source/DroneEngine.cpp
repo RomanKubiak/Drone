@@ -1,7 +1,7 @@
 #include "DroneEngine.h"
 
-DroneSingle::DroneSingle() 
-	: currentAngle (0), angleDelta (0), level (0), tailOff (0), offset(0), lastNoteNumber(-1),
+DroneSingle::DroneSingle()
+	: currentAngle (0), angleDelta (0), level (1.0), tailOff (0), offset(0), lastMidiNoteNumber(0),
 		currentShape(Sine)
 {
 }
@@ -13,6 +13,7 @@ bool DroneSingle::canPlaySound (SynthesiserSound* sound)
 
 void DroneSingle::startNote (int midiNoteNumber, float velocity, SynthesiserSound *ssound, int currentPitchWheelPosition)
 {
+	lastMidiNoteNumber = midiNoteNumber;
 	switch (currentShape)
 	{
 	case Sine:
@@ -20,14 +21,11 @@ void DroneSingle::startNote (int midiNoteNumber, float velocity, SynthesiserSoun
 	case Saw:
 		startNoteSaw(midiNoteNumber, velocity, ssound, currentPitchWheelPosition);
 	}
-
-	lastNoteNumber = midiNoteNumber;
 }
 
 void DroneSingle::startNoteSine (int midiNoteNumber, float velocity, SynthesiserSound*, int /*currentPitchWheelPosition*/)
 {
 	currentAngle = 0.0;
-	level = velocity * 0.15;
 	tailOff = 0.0;
 
 	double cyclesPerSecond = MidiMessage::getMidiNoteInHertz (midiNoteNumber) + offset;
@@ -44,13 +42,16 @@ void DroneSingle::startNoteSaw (int midiNoteNumber, float velocity, SynthesiserS
 void DroneSingle::setOffset(const double _offset)
 {
 	offset = _offset;
-	startNote(lastNoteNumber,1.0f, nullptr, -1);
+	stkSaw.setFrequency(MidiMessage::getMidiNoteInHertz (lastMidiNoteNumber) + offset);
+	double cyclesPerSecond = MidiMessage::getMidiNoteInHertz (lastMidiNoteNumber) + offset;
+	double cyclesPerSample = cyclesPerSecond / getSampleRate();
+
+	angleDelta = cyclesPerSample * 2.0 * double_Pi;
 }
 
 void DroneSingle::setShape(const Shape _shape)
 {
 	currentShape = _shape;
-	startNote(lastNoteNumber,1.0f, nullptr, -1);
 }
 
 void DroneSingle::stopNote (float /*velocity*/, bool allowTailOff)
@@ -103,14 +104,12 @@ void DroneSingle::renderNextSineBlock (AudioSampleBuffer& outputBuffer, int star
 
 void DroneSingle::renderNextSawBlock (AudioSampleBuffer& outputBuffer, int startSample, int numSamples)
 {
-	for (int ch = 0; ch<outputBuffer.getNumChannels(); ch++)
+	while (--numSamples >= 0)
 	{
-		for (int i=0; i<numSamples; i++)
-		{
-			outputBuffer.setSample(ch, startSample+i, stkSaw.tick());
-		}
+		for (int i = outputBuffer.getNumChannels(); --i >= 0;)
+			outputBuffer.addSample(i, startSample, stkSaw.tick());
+		++startSample;
 	}
-	outputBuffer.applyGain(0.2f);
 }
 
 void DroneSingle::renderNextBlock (AudioSampleBuffer& outputBuffer, int startSample, int numSamples)

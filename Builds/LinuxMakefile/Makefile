@@ -49,6 +49,7 @@ ifeq ($(CONFIG),Release)
 endif
 
 OBJECTS := \
+  $(OBJDIR)/DroneDelay_344bc154.o \
   $(OBJDIR)/dRowAudio_AudioOscilloscope_897a287.o \
   $(OBJDIR)/DroneScope_cbbd75a5.o \
   $(OBJDIR)/DroneEngine_fd330db.o \
@@ -88,6 +89,11 @@ clean:
 strip:
 	@echo Stripping Drone
 	-@strip --strip-unneeded $(OUTDIR)/$(TARGET)
+
+$(OBJDIR)/DroneDelay_344bc154.o: ../../Source/DroneDelay.cpp
+	-@mkdir -p $(OBJDIR)
+	@echo "Compiling DroneDelay.cpp"
+	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
 
 $(OBJDIR)/dRowAudio_AudioOscilloscope_897a287.o: ../../Source/dRowAudio_AudioOscilloscope.cpp
 	-@mkdir -p $(OBJDIR)

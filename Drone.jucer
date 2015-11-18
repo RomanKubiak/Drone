@@ -2,9 +2,11 @@
 
 <JUCERPROJECT id="Jj1tSB" name="Drone" projectType="guiapp" version="1.0.0"
               bundleIdentifier="com.yourcompany.Drone" includeBinaryInAppConfig="1"
-              jucerVersion="3.2.0">
+              jucerVersion="4.0.1">
   <MAINGROUP id="VusQAT" name="Drone">
     <GROUP id="{DC9DB53F-A8D8-487A-C435-172CC5CDF46E}" name="Source">
+      <FILE id="a8hYF2" name="DroneDelay.cpp" compile="1" resource="0" file="Source/DroneDelay.cpp"/>
+      <FILE id="Gebeqx" name="DroneDelay.h" compile="0" resource="0" file="Source/DroneDelay.h"/>
       <FILE id="AcPe9M" name="dRowAudio_AudioOscilloscope.cpp" compile="1"
             resource="0" file="Source/dRowAudio_AudioOscilloscope.cpp"/>
       <FILE id="Krlagz" name="dRowAudio_AudioOscilloscope.h" compile="0"
@@ -75,7 +77,8 @@
     </LINUX_MAKE>
     <CODEBLOCKS_LINUX targetFolder="Builds/CodeBlocksLinux">
       <CONFIGURATIONS>
-        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="Drone"/>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="Drone"
+                       headerPath="/home/r.kubiak/devel/JUCE/modules"/>
         <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="Drone"/>
       </CONFIGURATIONS>
       <MODULEPATHS>

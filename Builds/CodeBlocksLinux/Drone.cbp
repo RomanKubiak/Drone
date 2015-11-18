@@ -27,6 +27,7 @@
           <Add option="-DJUCE_APP_VERSION_HEX=0x10000"/>
           <Add directory="."/>
           <Add directory="..\..\JuceLibraryCode"/>
+          <Add directory="/home/r.kubiak/devel/JUCE/modules"/>
           <Add directory="/usr/include/freetype2"/>
         </Compiler>
         <Linker>
@@ -79,6 +80,11 @@
       <Add option="-Wno-strict-overflow"/>
     </Compiler>
     <Linker/>
+    <Unit filename="../../Source/DroneDelay.cpp"/>
+    <Unit filename="../../Source/DroneDelay.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
     <Unit filename="../../Source/dRowAudio_AudioOscilloscope.cpp"/>
     <Unit filename="../../Source/dRowAudio_AudioOscilloscope.h">
       <Option compile="0"/>
@@ -110,10 +116,6 @@
       <Option link="0"/>
     </Unit>
     <Unit filename="../../../JUCE/modules/juce_audio_basics/buffers/juce_AudioDataConverters.h">
-      <Option compile="0"/>
-      <Option link="0"/>
-    </Unit>
-    <Unit filename="../../../JUCE/modules/juce_audio_basics/buffers/juce_AudioSampleBuffer.cpp">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
@@ -729,6 +731,38 @@
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
+    <Unit filename="../../../JUCE/modules/juce_audio_processors/utilities/juce_AudioParameterBool.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../JUCE/modules/juce_audio_processors/utilities/juce_AudioParameterChoice.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../JUCE/modules/juce_audio_processors/utilities/juce_AudioParameterFloat.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../JUCE/modules/juce_audio_processors/utilities/juce_AudioParameterInt.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../JUCE/modules/juce_audio_processors/utilities/juce_AudioProcessorParameters.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../JUCE/modules/juce_audio_processors/utilities/juce_AudioProcessorParameterWithID.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../JUCE/modules/juce_audio_processors/utilities/juce_AudioProcessorValueTreeState.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../JUCE/modules/juce_audio_processors/utilities/juce_AudioProcessorValueTreeState.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
     <Unit filename="../../../JUCE/modules/juce_audio_processors/juce_module_info">
       <Option compile="0"/>
       <Option link="0"/>
@@ -773,6 +807,18 @@
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
+    <Unit filename="../../../JUCE/modules/juce_audio_utils/gui/juce_AudioVisualiserComponent.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../JUCE/modules/juce_audio_utils/gui/juce_AudioVisualiserComponent.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../JUCE/modules/juce_audio_utils/gui/juce_BluetoothMidiDevicePairingDialogue.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
     <Unit filename="../../../JUCE/modules/juce_audio_utils/gui/juce_MidiKeyboardComponent.cpp">
       <Option compile="0"/>
       <Option link="0"/>
@@ -786,6 +832,26 @@
       <Option link="0"/>
     </Unit>
     <Unit filename="../../../JUCE/modules/juce_audio_utils/players/juce_AudioProcessorPlayer.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../JUCE/modules/juce_audio_utils/native/juce_android_BluetoothMidiDevicePairingDialogue.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../JUCE/modules/juce_audio_utils/native/juce_ios_BluetoothMidiDevicePairingDialogue.mm">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../JUCE/modules/juce_audio_utils/native/juce_linux_BluetoothMidiDevicePairingDialogue.cpp">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../JUCE/modules/juce_audio_utils/native/juce_mac_BluetoothMidiDevicePairingDialogue.mm">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../../JUCE/modules/juce_audio_utils/native/juce_win_BluetoothMidiDevicePairingDialogue.cpp">
       <Option compile="0"/>
       <Option link="0"/>
     </Unit>
