@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="../../Source/DSynthUI.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1871" topLine="27" />
+		</Cursor>
+	</File>
+	<File name="../../JuceLibraryCode/modules/stk_generators/generators/SineWave.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="27" />
+		</Cursor>
+	</File>
+	<File name="../../Source/MainComponent.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1729" topLine="11" />
+		</Cursor>
+	</File>
+	<File name="../../JuceLibraryCode/modules/stk_generators/generators/Noise.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="45" />
+		</Cursor>
+	</File>
+	<File name="../../Source/DSynthUI.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5256" topLine="116" />
+		</Cursor>
+	</File>
+	<File name="../../Source/MainComponent.cpp" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1706" topLine="37" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>
