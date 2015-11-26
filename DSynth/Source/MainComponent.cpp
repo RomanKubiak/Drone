@@ -10,6 +10,20 @@
 #include "MainComponent.h"
 const float DENORMAL_THRESH = 1e-6f;
 
+float OscTriangle::tick()
+{
+    float output;
+
+    if ( phase >= 1.0 ) phase -= 1.0;
+	phase += (1./(sampleRate/(frequency)));
+	if (phase <= 0.5 ) {
+		output =(phase - 0.25) * 4;
+	} else {
+		output =((1.0-phase) - 0.25) * 4;
+	}
+	return(output);
+}
+
     //==============================================================================
 MainComponent::MainComponent() : timeInSamples(0), ui(*this)
 {
@@ -18,6 +32,8 @@ MainComponent::MainComponent() : timeInSamples(0), ui(*this)
     setAudioChannels (0, 1);
     noiseLevelAR.setAllTimes(0.0f, 0.2f, 0.0f, 0.0f);
     oscFreqAR.setAllTimes(0.001f, 0.2f, 0.001f, 0.001f);
+    noiseFilterCutoff = 50 * 10000;
+    noiseFilterResonance = 10;
     noiseLevel = 0.5f;
     oscBaseFreq = 50.0f;
     oscType = Sin;
@@ -35,6 +51,8 @@ void MainComponent::prepareToPlay (int samplesPerBlockExpected, double sampleRat
 {
     sRate = sampleRate;
     stk::Stk::setSampleRate(sampleRate);
+    oscTriangle.sampleRate = sampleRate;
+    hpFilter.sampleRate = sampleRate;
 }
 
 void MainComponent::getNextAudioBlock (const AudioSourceChannelInfo& bufferToFill)
@@ -56,12 +74,21 @@ void MainComponent::getNextAudioBlock (const AudioSourceChannelInfo& bufferToFil
                 oscSquare.setFrequency(jmax<float>(1, oscFreqAR.tick() * oscBaseFreq));
                 oscSample = oscSquare.tick();
                 break;
+            case Triangle:
+                oscTriangle.setFrequency(jmax<float>(1, oscFreqAR.tick() * oscBaseFreq));
+                oscSample = oscTriangle.tick();
             default:
                 break;
         }
 
-        // mixSample = (noiseSample + oscSample) - (noiseSample * oscSample);
-        mixSample = oscSample;
+        noiseSample = (noise.tick() * noiseLevelAR.tick()) * noiseLevel;
+
+        mixSample = (noiseSample + oscSample) - (noiseSample * oscSample);
+
+        //mixSample = oscSample;
+
+        //mixSample = hpFilter.hires(mixSample,noiseFilterCutoff*10000, noiseFilterResonance);
+
         if (doWaveshape)
             mixSample = waveshape(mixSample);
 
@@ -136,6 +163,8 @@ void MainComponent::setNoiseLevelAR(float a, float r)
 
 void MainComponent::setNoiseLevel(float level)
 {
+    ScopedWriteLock swl(audioLock);
+    noiseLevel = level;
 }
 
 void MainComponent::setOscFreq(float f)
@@ -279,4 +308,12 @@ void MainComponent::processDistortion(AudioSampleBuffer &buffer)
         }
     }
 }
+
+void MainComponent::setNoiseFilter(double cutoff, double resonance)
+{
+    ScopedWriteLock swl(audioLock);
+    noiseFilterCutoff = cutoff;
+    noiseFilterResonance = resonance;
+}
+
 Component* createMainContentComponent()     { return new MainComponent(); }

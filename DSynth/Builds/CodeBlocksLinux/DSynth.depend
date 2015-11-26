@@ -163,10 +163,10 @@
 1446558187 /home/r.kubiak/devel/JUCE/modules/juce_core/system/juce_TargetPlatform.h
 	<CoreFoundation/CoreFoundation.h>
 
-1446740211 /home/r.kubiak/devel/JUCE/modules/juce_core/system/juce_StandardHeader.h
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_core/system/juce_StandardHeader.h
 	<vector>
-	"juce_PlatformDefs.h"
 	"juce_CompilerSupport.h"
+	"juce_PlatformDefs.h"
 	<cstdlib>
 	<cstdarg>
 	<climits>
@@ -190,7 +190,7 @@
 	<atomic>
 	<byteswap.h>
 
-1446740211 /home/r.kubiak/devel/JUCE/modules/juce_core/system/juce_PlatformDefs.h
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_core/system/juce_PlatformDefs.h
 
 1446740211 /home/r.kubiak/devel/JUCE/modules/juce_core/system/juce_CompilerSupport.h
 
@@ -248,7 +248,7 @@
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_core/containers/juce_ArrayAllocationBase.h
 
-1446740211 /home/r.kubiak/devel/JUCE/modules/juce_core/containers/juce_Array.h
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_core/containers/juce_Array.h
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_core/containers/juce_LinkedListPointer.h
 
@@ -392,7 +392,7 @@
 
 1446558187 /home/r.kubiak/devel/JUCE/modules/juce_core/xml/juce_XmlElement.h
 
-1437667489 /home/r.kubiak/devel/JUCE/modules/juce_core/zip/juce_GZIPCompressorOutputStream.h
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_core/zip/juce_GZIPCompressorOutputStream.h
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_core/zip/juce_GZIPDecompressorInputStream.h
 
@@ -450,7 +450,7 @@
 
 1446558187 /home/r.kubiak/devel/JUCE/modules/juce_audio_basics/buffers/juce_AudioDataConverters.cpp
 
-1446558187 /home/r.kubiak/devel/JUCE/modules/juce_audio_basics/buffers/juce_FloatVectorOperations.cpp
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_audio_basics/buffers/juce_FloatVectorOperations.cpp
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_audio_basics/effects/juce_IIRFilter.cpp
 
@@ -795,7 +795,7 @@
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_core/native/juce_osx_ObjCHelpers.h
 
-1446740211 /home/r.kubiak/devel/JUCE/modules/juce_audio_devices/native/juce_mac_CoreAudio.cpp
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_audio_devices/native/juce_mac_CoreAudio.cpp
 
 1446558187 /home/r.kubiak/devel/JUCE/modules/juce_audio_devices/native/juce_mac_CoreMidi.cpp
 
@@ -815,15 +815,13 @@
 
 1446558187 /home/r.kubiak/devel/JUCE/modules/juce_audio_devices/native/juce_win32_Midi.cpp
 
-1437667489 /home/r.kubiak/devel/JUCE/modules/juce_audio_devices/native/juce_win32_ASIO.cpp
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_audio_devices/native/juce_win32_ASIO.cpp
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_audio_devices/native/juce_win32_AudioCDReader.cpp
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_audio_devices/native/juce_win32_AudioCDBurner.cpp
 
-1447069634 /home/r.kubiak/devel/JUCE/modules/juce_audio_devices/native/juce_linux_ALSA.cpp
-	<sys/time.h>
-	<sys/resource.h>
+1448454085 /home/r.kubiak/devel/JUCE/modules/juce_audio_devices/native/juce_linux_ALSA.cpp
 
 1446558187 /home/r.kubiak/devel/JUCE/modules/juce_audio_devices/native/juce_linux_Midi.cpp
 
@@ -837,7 +835,7 @@
 
 1446740211 /home/r.kubiak/devel/JUCE/modules/juce_audio_devices/native/juce_android_Midi.cpp
 
-1446740211 /home/r.kubiak/devel/JUCE/modules/juce_audio_devices/native/juce_android_OpenSL.cpp
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_audio_devices/native/juce_android_OpenSL.cpp
 
 1437667489 source:/home/r.kubiak/devel/JUCE/modules/juce_audio_formats/juce_audio_formats.cpp
 	"AppConfig.h"
@@ -886,7 +884,7 @@
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_audio_formats/sampler/juce_Sampler.cpp
 
-1446558187 /home/r.kubiak/devel/JUCE/modules/juce_audio_formats/codecs/juce_AiffAudioFormat.cpp
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_audio_formats/codecs/juce_AiffAudioFormat.cpp
 
 1446740211 /home/r.kubiak/devel/JUCE/modules/juce_audio_formats/codecs/juce_CoreAudioFormat.cpp
 
@@ -1702,7 +1700,7 @@
 	<MediaHandlers.h>
 	<ImageCodec.h>
 
-1446558187 /home/r.kubiak/devel/JUCE/modules/juce_audio_formats/codecs/juce_WavAudioFormat.cpp
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_audio_formats/codecs/juce_WavAudioFormat.cpp
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_audio_formats/codecs/juce_LAMEEncoderAudioFormat.cpp
 
@@ -2047,9 +2045,9 @@
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_gui_basics/components/juce_CachedComponentImage.h
 
-1446740211 /home/r.kubiak/devel/JUCE/modules/juce_gui_basics/components/juce_Component.h
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_gui_basics/components/juce_Component.h
 
-1437667489 /home/r.kubiak/devel/JUCE/modules/juce_gui_basics/layout/juce_ComponentAnimator.h
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_gui_basics/layout/juce_ComponentAnimator.h
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_gui_basics/components/juce_Desktop.h
 
@@ -2285,9 +2283,9 @@
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/processors/juce_AudioProcessorParameter.h
 
-1446740211 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/processors/juce_AudioProcessor.h
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/processors/juce_AudioProcessor.h
 
-1437667489 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/processors/juce_PluginDescription.h
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/processors/juce_PluginDescription.h
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/processors/juce_AudioPluginInstance.h
 
@@ -2299,7 +2297,7 @@
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/format/juce_AudioPluginFormatManager.h
 
-1437667489 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/scanning/juce_KnownPluginList.h
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/scanning/juce_KnownPluginList.h
 
 1446558187 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/format_types/juce_AudioUnitPluginFormat.h
 
@@ -2376,7 +2374,7 @@
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_gui_extra/misc/juce_AppleRemote.h
 
-1437667489 /home/r.kubiak/devel/JUCE/modules/juce_gui_extra/misc/juce_BubbleMessageComponent.h
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_gui_extra/misc/juce_BubbleMessageComponent.h
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_gui_extra/misc/juce_ColourSelector.h
 
@@ -2400,27 +2398,27 @@
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/format/juce_AudioPluginFormatManager.cpp
 
-1446740211 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/processors/juce_AudioProcessor.cpp
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/processors/juce_AudioProcessor.cpp
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/processors/juce_AudioProcessorEditor.cpp
 
-1446740211 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/processors/juce_AudioProcessorGraph.cpp
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/processors/juce_AudioProcessorGraph.cpp
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/processors/juce_GenericAudioProcessorEditor.cpp
 
-1437667489 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/processors/juce_PluginDescription.cpp
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/processors/juce_PluginDescription.cpp
 
-1437667489 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/format_types/juce_LADSPAPluginFormat.cpp
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/format_types/juce_LADSPAPluginFormat.cpp
 	<ladspa.h>
 
-1446740211 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/format_types/juce_VSTPluginFormat.cpp
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/format_types/juce_VSTPluginFormat.cpp
 	"../../juce_gui_extra/native/juce_mac_CarbonViewWrapperComponent.h"
 	"pluginterfaces/vst2.x/aeffectx.h"
 	"juce_VSTMidiEventList.h"
 
 1446558187 /home/r.kubiak/devel/JUCE/modules/juce_gui_extra/native/juce_mac_CarbonViewWrapperComponent.h
 
-1446740211 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/format_types/juce_VST3PluginFormat.cpp
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/format_types/juce_VST3PluginFormat.cpp
 	<map>
 	"juce_VST3Headers.h"
 	"juce_VST3Common.h"
@@ -2476,7 +2474,7 @@
 
 1446740211 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/format_types/juce_VST3Common.h
 
-1446740211 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/format_types/juce_AudioUnitPluginFormat.mm
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/format_types/juce_AudioUnitPluginFormat.mm
 	<AudioUnit/AudioUnit.h>
 	<AudioUnit/AUCocoaUIView.h>
 	<CoreAudioKit/AUGenericView.h>
@@ -2486,7 +2484,7 @@
 	"../../juce_audio_devices/native/juce_MidiDataConcatenator.h"
 	"../../juce_gui_extra/native/juce_mac_CarbonViewWrapperComponent.h"
 
-1437667489 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/scanning/juce_KnownPluginList.cpp
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/scanning/juce_KnownPluginList.cpp
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/scanning/juce_PluginDirectoryScanner.cpp
 
@@ -2494,7 +2492,7 @@
 
 1446740211 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/utilities/juce_AudioProcessorValueTreeState.cpp
 
-1446740211 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/utilities/juce_AudioProcessorParameters.cpp
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_audio_processors/utilities/juce_AudioProcessorParameters.cpp
 
 1446740211 source:/home/r.kubiak/devel/JUCE/modules/juce_audio_utils/juce_audio_utils.cpp
 	"AppConfig.h"
@@ -2544,7 +2542,7 @@
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_audio_utils/gui/juce_AudioAppComponent.h
 
-1446740211 /home/r.kubiak/devel/JUCE/modules/juce_audio_utils/gui/juce_BluetoothMidiDevicePairingDialogue.h
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_audio_utils/gui/juce_BluetoothMidiDevicePairingDialogue.h
 
 1446740211 /home/r.kubiak/devel/JUCE/modules/juce_audio_utils/players/juce_AudioProcessorPlayer.h
 
@@ -2704,7 +2702,7 @@
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_core/files/juce_DirectoryIterator.cpp
 
-1446740211 /home/r.kubiak/devel/JUCE/modules/juce_core/files/juce_File.cpp
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_core/files/juce_File.cpp
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_core/files/juce_FileInputStream.cpp
 
@@ -2888,7 +2886,7 @@
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_core/zip/zlib/zutil.c
 	"zutil.h"
 
-1446558187 /home/r.kubiak/devel/JUCE/modules/juce_core/zip/juce_GZIPCompressorOutputStream.cpp
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_core/zip/juce_GZIPCompressorOutputStream.cpp
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_core/zip/juce_ZipFile.cpp
 
@@ -2910,7 +2908,7 @@
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_core/native/juce_mac_Threads.mm
 
-1446740211 /home/r.kubiak/devel/JUCE/modules/juce_core/native/juce_win32_Files.cpp
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_core/native/juce_win32_Files.cpp
 
 1446558187 /home/r.kubiak/devel/JUCE/modules/juce_core/native/juce_win32_Network.cpp
 
@@ -3034,7 +3032,7 @@
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_events/native/juce_ios_MessageManager.mm
 
-1437667489 /home/r.kubiak/devel/JUCE/modules/juce_events/native/juce_win32_Messaging.cpp
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_events/native/juce_win32_Messaging.cpp
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_events/native/juce_linux_Messaging.cpp
 
@@ -3547,7 +3545,7 @@
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_graphics/native/juce_win32_DirectWriteTypeface.cpp
 
-1446558187 /home/r.kubiak/devel/JUCE/modules/juce_graphics/native/juce_win32_DirectWriteTypeLayout.cpp
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_graphics/native/juce_win32_DirectWriteTypeLayout.cpp
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_graphics/native/juce_win32_Fonts.cpp
 
@@ -3557,7 +3555,7 @@
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_graphics/native/juce_android_GraphicsContext.cpp
 
-1437667489 /home/r.kubiak/devel/JUCE/modules/juce_graphics/native/juce_android_Fonts.cpp
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_graphics/native/juce_android_Fonts.cpp
 
 1446558187 source:/home/r.kubiak/devel/JUCE/modules/juce_gui_basics/juce_gui_basics.cpp
 	"AppConfig.h"
@@ -3965,7 +3963,7 @@
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_gui_basics/widgets/juce_TableListBox.cpp
 
-1446558187 /home/r.kubiak/devel/JUCE/modules/juce_gui_basics/widgets/juce_TextEditor.cpp
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_gui_basics/widgets/juce_TextEditor.cpp
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_gui_basics/widgets/juce_ToolbarItemComponent.cpp
 
@@ -4013,7 +4011,7 @@
 
 1446740211 /home/r.kubiak/devel/JUCE/modules/juce_gui_basics/native/juce_ios_Windowing.mm
 
-1446740211 /home/r.kubiak/devel/JUCE/modules/juce_gui_basics/native/juce_mac_NSViewComponentPeer.mm
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_gui_basics/native/juce_mac_NSViewComponentPeer.mm
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_gui_basics/native/juce_mac_Windowing.mm
 
@@ -4027,7 +4025,7 @@
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_gui_basics/native/juce_win32_DragAndDrop.cpp
 
-1437667489 /home/r.kubiak/devel/JUCE/modules/juce_gui_basics/native/juce_win32_FileChooser.cpp
+1448454086 /home/r.kubiak/devel/JUCE/modules/juce_gui_basics/native/juce_win32_FileChooser.cpp
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_gui_basics/native/juce_linux_Clipboard.cpp
 
@@ -4136,7 +4134,7 @@
 
 1437667489 /home/r.kubiak/devel/JUCE/modules/juce_gui_extra/native/juce_android_WebBrowserComponent.cpp
 
-1448026510 source:/home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/stk_core.cpp
+1448557825 source:/home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/stk_core.cpp
 	"AppConfig.h"
 	"stk_core.h"
 	"stk/Phonemes.cpp"
@@ -4148,7 +4146,7 @@
 	"io/FileWvIn.cpp"
 	"io/FileWvOut.cpp"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/stk_core.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/stk_core.h
 	"../juce_core/juce_core.h"
 	"stk/Stk.h"
 	"stk/Effect.h"
@@ -4174,105 +4172,105 @@
 1448024406 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/juce_core/juce_core.h
 	"../../../../JUCE/modules/juce_core/juce_core.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/stk/Stk.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/stk/Stk.h
 	<string>
 	<cstring>
 	<iostream>
 	<sstream>
 	<vector>
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/stk/Effect.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/stk/Effect.h
 	"Stk.h"
 	<cmath>
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/stk/Filter.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/stk/Filter.h
 	"Stk.h"
 	<vector>
 	<cmath>
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/stk/Generator.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/stk/Generator.h
 	"Stk.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/stk/Instrmnt.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/stk/Instrmnt.h
 	"Stk.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/stk/Voicer.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/stk/Voicer.h
 	"Instrmnt.h"
 	<vector>
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/stk/Phonemes.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/stk/Phonemes.h
 	"Stk.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/stk/Sphere.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/stk/Sphere.h
 	"Stk.h"
 	"Vector3D.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/stk/Vector3D.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/stk/Vector3D.h
 	"Stk.h"
 	<cmath>
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/stk/Function.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/stk/Function.h
 	"Stk.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/functions/BowTable.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/functions/BowTable.h
 	"Function.h"
 	<cmath>
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/functions/Function.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/functions/Function.h
 	"../stk/Function.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/functions/Cubic.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/functions/Cubic.h
 	"Function.h"
 	<cmath>
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/functions/JetTable.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/functions/JetTable.h
 	"Function.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/functions/ReedTable.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/functions/ReedTable.h
 	"Function.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/io/FileRead.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/io/FileRead.h
 	"Stk.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/io/Stk.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/io/Stk.h
 	"../stk/Stk.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/io/FileWrite.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/io/FileWrite.h
 	"Stk.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/io/FileWvIn.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/io/FileWvIn.h
 	"WvIn.h"
 	"FileRead.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/io/WvIn.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/io/WvIn.h
 	"Stk.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/io/FileWvOut.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/io/FileWvOut.h
 	"WvOut.h"
 	"FileWrite.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/io/WvOut.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/io/WvOut.h
 	"Stk.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/stk/Phonemes.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/stk/Phonemes.cpp
 	"Phonemes.h"
 	<iostream>
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/stk/Sphere.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/stk/Sphere.cpp
 	"Sphere.h"
 	<cmath>
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/stk/Stk.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/stk/Stk.cpp
 	"Stk.h"
 	<stdlib.h>
 	<unistd.h>
 	<windows.h>
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/stk/Voicer.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/stk/Voicer.cpp
 	"Voicer.h"
 	<cmath>
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/io/FileRead.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/io/FileRead.cpp
 	"FileRead.h"
 	<sys/stat.h>
 	<sys/types.h>
@@ -4280,21 +4278,21 @@
 	<cmath>
 	<cstdio>
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/io/FileWrite.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/io/FileWrite.cpp
 	"FileWrite.h"
 	<string>
 	<cstdio>
 	<cstring>
 	<cmath>
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/io/FileWvIn.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/io/FileWvIn.cpp
 	"FileWvIn.h"
 	<cmath>
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/io/FileWvOut.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_core/io/FileWvOut.cpp
 	"FileWvOut.h"
 
-1448026510 source:/home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/stk_effects.cpp
+1448557825 source:/home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/stk_effects.cpp
 	"AppConfig.h"
 	"stk_effects.h"
 	"effects/Chorus.cpp"
@@ -4306,7 +4304,7 @@
 	"effects/PitShift.cpp"
 	"effects/PRCRev.cpp"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/stk_effects.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/stk_effects.h
 	"../juce_core/juce_core.h"
 	"../stk_core/stk_core.h"
 	"effects/Chorus.h"
@@ -4318,106 +4316,106 @@
 	"effects/PitShift.h"
 	"effects/PRCRev.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/Chorus.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/Chorus.h
 	"Effect.h"
 	"DelayL.h"
 	"SineWave.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/Effect.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/Effect.h
 	"../../stk_core/stk/Effect.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/DelayL.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/DelayL.h
 	"../../stk_filters/filters/DelayL.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/DelayL.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/DelayL.h
 	"Filter.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/Filter.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/Filter.h
 	"../../stk_core/stk/Filter.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/SineWave.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/SineWave.h
 	"../../stk_generators/generators/SineWave.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/SineWave.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/SineWave.h
 	"Generator.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/Generator.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/Generator.h
 	"../../stk_core/stk/Generator.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/Echo.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/Echo.h
 	"Effect.h"
 	"Delay.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/Delay.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/Delay.h
 	"../../stk_filters/filters/Delay.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/Delay.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/Delay.h
 	"Filter.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/FreeVerb.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/FreeVerb.h
 	"Effect.h"
 	"Delay.h"
 	"OnePole.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/OnePole.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/OnePole.h
 	"../../stk_filters/filters/OnePole.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/OnePole.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/OnePole.h
 	"Filter.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/JCRev.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/JCRev.h
 	"Effect.h"
 	"Delay.h"
 	"OnePole.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/LentPitShift.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/LentPitShift.h
 	"Effect.h"
 	"Delay.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/NRev.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/NRev.h
 	"Effect.h"
 	"Delay.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/PitShift.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/PitShift.h
 	"Effect.h"
 	"DelayL.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/PRCRev.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/PRCRev.h
 	"Effect.h"
 	"Delay.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/Chorus.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/Chorus.cpp
 	"Chorus.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/Echo.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/Echo.cpp
 	"Echo.h"
 	<iostream>
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/FreeVerb.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/FreeVerb.cpp
 	"FreeVerb.h"
 	<cmath>
 	<iostream>
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/JCRev.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/JCRev.cpp
 	"JCRev.h"
 	<cmath>
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/LentPitShift.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/LentPitShift.cpp
 	"LentPitShift.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/NRev.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/NRev.cpp
 	"NRev.h"
 	<cmath>
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/PitShift.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/PitShift.cpp
 	"PitShift.h"
 	<cmath>
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/PRCRev.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_effects/effects/PRCRev.cpp
 	"PRCRev.h"
 	<cmath>
 
-1448026510 source:/home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/stk_filters.cpp
+1448557825 source:/home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/stk_filters.cpp
 	"AppConfig.h"
 	"stk_filters.h"
 	"filters/BiQuad.cpp"
@@ -4434,7 +4432,7 @@
 	"filters/TwoPole.cpp"
 	"filters/TwoZero.cpp"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/stk_filters.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/stk_filters.h
 	"../juce_core/juce_core.h"
 	"../stk_core/stk_core.h"
 	"filters/BiQuad.h"
@@ -4451,82 +4449,82 @@
 	"filters/TwoPole.h"
 	"filters/TwoZero.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/BiQuad.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/BiQuad.h
 	"Filter.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/DelayA.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/DelayA.h
 	"Filter.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/Fir.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/Fir.h
 	"Filter.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/FormSwep.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/FormSwep.h
 	"Filter.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/Iir.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/Iir.h
 	"Filter.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/OneZero.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/OneZero.h
 	"Filter.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/PoleZero.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/PoleZero.h
 	"Filter.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/TapDelay.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/TapDelay.h
 	"Filter.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/TwoPole.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/TwoPole.h
 	"Filter.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/TwoZero.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/TwoZero.h
 	"Filter.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/BiQuad.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/BiQuad.cpp
 	"BiQuad.h"
 	<cmath>
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/Delay.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/Delay.cpp
 	"Delay.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/DelayA.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/DelayA.cpp
 	"DelayA.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/DelayL.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/DelayL.cpp
 	"DelayL.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/Fir.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/Fir.cpp
 	"Fir.h"
 	<cmath>
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/FormSwep.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/FormSwep.cpp
 	"FormSwep.h"
 	<cmath>
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/Iir.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/Iir.cpp
 	"Iir.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/OnePole.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/OnePole.cpp
 	"OnePole.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/OneZero.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/OneZero.cpp
 	"OneZero.h"
 	<cmath>
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/PoleZero.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/PoleZero.cpp
 	"PoleZero.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/TapDelay.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/TapDelay.cpp
 	"TapDelay.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/TwoPole.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/TwoPole.cpp
 	"TwoPole.h"
 	<cmath>
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/TwoZero.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_filters/filters/TwoZero.cpp
 	"TwoZero.h"
 	<cmath>
 
-1448026510 source:/home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/stk_generators.cpp
+1448557825 source:/home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/stk_generators.cpp
 	"AppConfig.h"
 	"stk_generators.h"
 	"generators/ADSR.cpp"
@@ -4540,7 +4538,7 @@
 	"generators/Noise.cpp"
 	"generators/SineWave.cpp"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/stk_generators.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/stk_generators.h
 	"../juce_core/juce_core.h"
 	"../stk_core/stk_core.h"
 	"generators/ADSR.h"
@@ -4554,130 +4552,130 @@
 	"generators/Noise.h"
 	"generators/SineWave.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/ADSR.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/ADSR.h
 	"Generator.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/Asymp.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/Asymp.h
 	"Generator.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/Blit.h
-	"Generator.h"
-	<cmath>
-	<limits>
-
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/BlitSaw.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/Blit.h
 	"Generator.h"
 	<cmath>
 	<limits>
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/BlitSquare.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/BlitSaw.h
 	"Generator.h"
 	<cmath>
 	<limits>
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/FileLoop.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/BlitSquare.h
+	"Generator.h"
+	<cmath>
+	<limits>
+
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/FileLoop.h
 	"FileWvIn.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/FileWvIn.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/FileWvIn.h
 	"../../stk_core/io/FileWvIn.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/Envelope.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/Envelope.h
 	"Generator.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/Granulate.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/Granulate.h
 	<vector>
 	"Generator.h"
 	"Envelope.h"
 	"Noise.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/Noise.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/Noise.h
 	"Generator.h"
 	<stdlib.h>
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/ADSR.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/ADSR.cpp
 	"ADSR.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/Asymp.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/Asymp.cpp
 	"Asymp.h"
 	<cmath>
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/Blit.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/Blit.cpp
 	"Blit.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/BlitSaw.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/BlitSaw.cpp
 	"BlitSaw.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/BlitSquare.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/BlitSquare.cpp
 	"BlitSquare.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/FileLoop.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/FileLoop.cpp
 	"FileLoop.h"
 	<cmath>
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/Envelope.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/Envelope.cpp
 	"Envelope.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/Granulate.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/Granulate.cpp
 	"Granulate.h"
 	"FileRead.h"
 	<cmath>
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/FileRead.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/FileRead.h
 	"../../stk_core/io/FileRead.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/Noise.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/Noise.cpp
 	"Noise.h"
 	<time.h>
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/SineWave.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators/generators/SineWave.cpp
 	"SineWave.h"
 	<cmath>
 
-1448026510 source:/home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators_extra/stk_generators_extra.cpp
+1448557825 source:/home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators_extra/stk_generators_extra.cpp
 	"AppConfig.h"
 	"stk_generators_extra.h"
 	"generators/Modulate.cpp"
 	"generators/SingWave.cpp"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators_extra/stk_generators_extra.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators_extra/stk_generators_extra.h
 	"../juce_core/juce_core.h"
 	"../stk_core/stk_core.h"
 	"generators/Modulate.h"
 	"generators/SingWave.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators_extra/generators/Modulate.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators_extra/generators/Modulate.h
 	"Generator.h"
 	"SineWave.h"
 	"Noise.h"
 	"OnePole.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators_extra/generators/Generator.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators_extra/generators/Generator.h
 	"../../stk_core/stk/Generator.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators_extra/generators/SineWave.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators_extra/generators/SineWave.h
 	"../../stk_generators/generators/SineWave.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators_extra/generators/Noise.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators_extra/generators/Noise.h
 	"../../stk_generators/generators/Noise.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators_extra/generators/OnePole.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators_extra/generators/OnePole.h
 	"../../stk_filters/filters/OnePole.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators_extra/generators/SingWave.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators_extra/generators/SingWave.h
 	"FileLoop.h"
 	"Modulate.h"
 	"Envelope.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators_extra/generators/FileLoop.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators_extra/generators/FileLoop.h
 	"../../stk_generators/generators/FileLoop.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators_extra/generators/Envelope.h
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators_extra/generators/Envelope.h
 	"../../stk_generators/generators/Envelope.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators_extra/generators/Modulate.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators_extra/generators/Modulate.cpp
 	"Modulate.h"
 
-1448026510 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators_extra/generators/SingWave.cpp
+1448557825 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/stk_generators_extra/generators/SingWave.cpp
 	"SingWave.h"
 
 1448024406 source:/home/r.kubiak/devel/DSynth/Source/Main.cpp
@@ -4732,17 +4730,27 @@
 1448024406 /home/r.kubiak/devel/DSynth/JuceLibraryCode/modules/juce_gui_extra/juce_gui_extra.h
 	"../../../../JUCE/modules/juce_gui_extra/juce_gui_extra.h"
 
-1448037565 source:/home/r.kubiak/devel/DSynth/Source/MainComponent.cpp
+1448558201 source:/home/r.kubiak/devel/DSynth/Source/MainComponent.cpp
 	"MainComponent.h"
 
-1448037233 /home/r.kubiak/devel/DSynth/Source/MainComponent.h
+1448558120 /home/r.kubiak/devel/DSynth/Source/MainComponent.h
 	"../JuceLibraryCode/JuceHeader.h"
 	"DSynthUI.h"
+	"MaxFilter.h"
 
-1448037511 source:/home/r.kubiak/devel/DSynth/Source/DSynthUI.cpp
+1448558215 source:/home/r.kubiak/devel/DSynth/Source/DSynthUI.cpp
 	"DSynthUI.h"
 	"MainComponent.h"
 
-1448037377 /home/r.kubiak/devel/DSynth/Source/DSynthUI.h
+1448558215 /home/r.kubiak/devel/DSynth/Source/DSynthUI.h
 	"JuceHeader.h"
+
+1448557426 /home/r.kubiak/devel/DSynth/Source/MaxSVF.h
+	"JuceHeader.h"
+
+1448558188 /home/r.kubiak/devel/DSynth/Source/MaxFilter.h
+	"JuceHeader.h"
+
+1448557984 source:/home/r.kubiak/devel/DSynth/Source/MaxFilter.cpp
+	"MaxFilter.h"
 

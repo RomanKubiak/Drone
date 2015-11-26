@@ -13,6 +13,17 @@
 
 #include "../JuceLibraryCode/JuceHeader.h"
 #include "DSynthUI.h"
+#include "MaxFilter.h"
+
+class OscTriangle
+{
+	public:
+		float tick();
+		void setFrequency(double _frequency) { frequency = _frequency; }
+		float phase;
+		double sampleRate;
+		double frequency;
+};
 
 class MainComponent   : public AudioAppComponent
 {
@@ -34,11 +45,13 @@ class MainComponent   : public AudioAppComponent
 		void setWaveshape(bool _doWaveshape);
 		void processDistortion(AudioSampleBuffer &buffer);
 		void setDistortionType(uint8_t type);
+		void setNoiseFilter(double cutoff, double resonance);
 		enum OscType
 		{
 			Sin,
 			Saw,
 			Square,
+			Triangle,
 			None
 		};
 		enum DistType
@@ -51,7 +64,9 @@ class MainComponent   : public AudioAppComponent
 			NoDistortion
 		};
 		JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainComponent)
+
 	private:
+		maxiFilter hpFilter;
 		float distGainIndB;
 		ReadWriteLock audioLock;
 		double sRate;
@@ -62,6 +77,7 @@ class MainComponent   : public AudioAppComponent
 		stk::ADSR oscLevelAR;
 		stk::ADSR noiseLevelAR;
 		stk::Noise noise;
+		OscTriangle oscTriangle;
 		double timeInSamples;
 		float noiseLevel;
 		float oscBaseFreq;
@@ -69,6 +85,8 @@ class MainComponent   : public AudioAppComponent
 		OscType oscType;
 		bool doWaveshape;
 		DistType distortionType;
+		double noiseFilterCutoff;
+		double noiseFilterResonance;
 };
 
 #endif  // MAINCOMPONENT_H_INCLUDED

@@ -79,6 +79,15 @@
       <Add option="-Wno-strict-overflow"/>
     </Compiler>
     <Linker/>
+    <Unit filename="../../Source/MaxFilter.cpp"/>
+    <Unit filename="../../Source/MaxFilter.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../Source/MaxSVF.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
     <Unit filename="../../Source/DSynthUI.cpp"/>
     <Unit filename="../../Source/DSynthUI.h">
       <Option compile="0"/>

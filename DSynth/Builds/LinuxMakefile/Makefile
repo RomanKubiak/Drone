@@ -49,6 +49,7 @@ ifeq ($(CONFIG),Release)
 endif
 
 OBJECTS := \
+  $(OBJDIR)/MaxFilter_e780f95d.o \
   $(OBJDIR)/DSynthUI_20f4fa55.o \
   $(OBJDIR)/MainComponent_a6ffb4a5.o \
   $(OBJDIR)/Main_90ebc5c2.o \
@@ -85,6 +86,11 @@ clean:
 strip:
 	@echo Stripping DSynth
 	-@strip --strip-unneeded $(OUTDIR)/$(TARGET)
+
+$(OBJDIR)/MaxFilter_e780f95d.o: ../../Source/MaxFilter.cpp
+	-@mkdir -p $(OBJDIR)
+	@echo "Compiling MaxFilter.cpp"
+	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
 
 $(OBJDIR)/DSynthUI_20f4fa55.o: ../../Source/DSynthUI.cpp
 	-@mkdir -p $(OBJDIR)

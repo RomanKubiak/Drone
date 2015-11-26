@@ -75,6 +75,8 @@ private:
     ScopedPointer<ComboBox> oscShape;
     ScopedPointer<ToggleButton> waveshapeBtn;
     ScopedPointer<ComboBox> distortionType;
+    ScopedPointer<Slider> noiseCutoff;
+    ScopedPointer<Slider> noiseResonance;
 
 
     //==============================================================================

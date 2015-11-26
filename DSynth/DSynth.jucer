@@ -5,6 +5,9 @@
               jucerVersion="4.0.1">
   <MAINGROUP id="sbXHF2" name="DSynth">
     <GROUP id="{2AEF58D9-AB43-DA98-DE6C-5CE6C19F7848}" name="Source">
+      <FILE id="TXrxav" name="MaxFilter.cpp" compile="1" resource="0" file="Source/MaxFilter.cpp"/>
+      <FILE id="H0BivU" name="MaxFilter.h" compile="0" resource="0" file="Source/MaxFilter.h"/>
+      <FILE id="rDE07C" name="MaxSVF.h" compile="0" resource="0" file="Source/MaxSVF.h"/>
       <FILE id="mvQq7G" name="DSynthUI.cpp" compile="1" resource="0" file="Source/DSynthUI.cpp"/>
       <FILE id="iR65R9" name="DSynthUI.h" compile="0" resource="0" file="Source/DSynthUI.h"/>
       <FILE id="pCMIVy" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
